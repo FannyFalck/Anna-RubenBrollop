@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Imperial+Script&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caramel&family=Imperial+Script&family=Pinyon+Script&display=swap');
+      </style>
+
+    <title>Bröllop</title>
+
+  </head>
+
+  <body>
+    <header>
+      <p class="valkomstext">Vi skall gifta oss <br> Anna & Ruben</p>
+      <img class="framsidabild" src="images/bild1.jpeg" alt="Anna ich Ruben vid Åre">
+      
+    </header>
+
+    <div class="MainCenterBox">
+      <div class="MainContent">
+        <nav id="navigationbar">
+          <ul id="mynav">
+            <li><a href="#" data-target="valkommen">Välkommen</a></li>
+            <li><a href="#" data-target="brollopsdagen">Bröllopsdagen</a></li>
+            <li><a href="#" data-target="placering">Placering</a></li>
+            <li><a href="#" data-target="vinformation">Viktig information</a></li>
+            <li><a href="#" data-target="brollopsfolje">Bröllopsfölje</a></li>
+            <li><a href="#" data-target="onskelista">Önskelista</a></li>
+            <li><a href="#" data-target="bildgalleri">Bildgalleri</a></li>
+          </ul>
+        </nav>
+  
+        <div class="information">
+            <div id="valkommen" class="content-section"> 
+              <h2>Välkommen</h2>
+              <p>Välkommen till vår bröllopssida!</p>
+          </div>
+          
+          <div id="brollopsdagen" class="content-section" style="display: none;"> 
+            <h2>Bröllopsdagen</h2>
+            <p>Information om bröllopsdagen.</p>
+          </div>
+          
+          <div id="placering" class="content-section" style="display: none;"> 
+            <h2>Placering</h2>
+            <p>Placering av gäster.</p>
+          </div>
+          
+          <div id="vinformation" class="content-section" style="display: none;"> 
+            <h2>Viktig information</h2>
+            <p>Viktig information för gästerna.</p>
+          </div>
+
+          <div id="brollopsfolje" class="content-section" style="display: none;"> 
+            <h2>Bröllopsfölje</h2>
+            <p>samt några andra personer som kan vara bra att känna till inför vårt bröllop. .</p>
+          </div>
+        
+          
+          <div id="onskelista" class="content-section" style="display: none;"> 
+            <h2>Önskelista</h2>
+            <p>Vår önskelista.</p>
+          </div>
+          
+          <div id="bildgalleri" class="content-section" style="display: none;"> 
+            <h2>Bildgalleri</h2>
+            <p>Bilder från våra bästa stunder.</p>
+          </div>
+        </div> <!-- Slut Information -->
+      </div> <!-- Slut MainContent -->
+
+      <div class="HelaTimeCountDown">
+        <hr> 
+        <p class="TimerCountText"> Bröllopsdag om</p>
+        <div id="TimeCountDown">
+          <div id="days"></div>
+          <div id="hours"></div>
+          <div id="minutes"></div>
+          <div id="seconds"></div>
+        </div>
+        <p>Fanny Falck </p>
+      </div> <!-- Slut HelaTimeCountDown -->
+      
+        
+    </div> <!-- Slut  MainCenterBox -->
+  
+
+
+   
+    
+  </body>
+
+</html>

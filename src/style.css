@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('.jpeg');
+  background-size: cover; /* Täcker hela ytan men kan beskära bilden */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.framsidabild {
+  width: calc(100% - 20px); /* 100% av förälderns bredd minus 20px (10px marginal på varje sida) */
+  height: auto; /* Bevarar bildens proportioner */
+  margin: 10px; /* Lägger till en 10px marginal runt hela bilden */
+  box-sizing: border-box; /* Inkluderar padding och border i elementets totala bredd/höjd */
+  border-radius: 3px;
+}
+
+
+.valkomstext {
+  position: absolute; /* Placera texten ovanpå bilden */
+  top: 20px; /* Justera vertikal placering av texten */
+  left: 20px; /* Justera horisontell placering av texten */
+  color: black; /* Vit textfärg för att synas mot bilden */
+  font-size: 56px; /* Justera textstorleken efter behov */
+  font-family: "Bodoni Moda SC", serif;
+  padding: 10px; /* Lägger till lite utrymme runt texten */
+  
+}
+
+/* **** **** **** Navigationbar hover mus  ******** **** */
+ul#mynav {
+  list-style-type: none; /* Tar bort punktlistorna */
+  padding-left: 40px; /* Tar bort standard padding */
+  margin: 0; /* Tar bort standard margin */
+  /* font-family: "Bodoni Moda SC", serif; */
+}
+
+ul#mynav li {
+  margin-bottom: 10px; /* Lägger till ett mellanrum mellan varje länk */
+}
+
+ul#mynav li a {
+  text-decoration: none; 
+  color: black;
+  display: block; /* Gör länkarna till blockelement så att hela listobjektet är klickbart */
+  padding: 15px; /* Lägger till lite utrymme runt länkarna för bättre klickbarhet */
+  font-size: 20px;
+  cursor: pointer; /* Ändra till pekare för att visa att det är klickbart */
+  transition: font-size 0.2s ease, transform 0.2s ease; /* För smidig övergång vid hover */
+}
+
+ul#mynav li a:hover {
+  font-size: 22px; /* Öka textstorleken vid hover */
+  transform: scale(1.05); /* Gör texten något större vid hover */
+}
+
+/*  ******** *************** ****************** *************************************** ************ */
+/*  ******** **** **** FLEX BOX CENTER FÖR ALLA TRE , navigationbar, infoamtion  och timercontdown ************ */
+.MainCenterBox {
+  display: flex; /* Gör MainCenterBox till en flex container */
+  flex-direction: column; /* Lägg till detta för att stapla elementen vertikalt */
+  border-radius: 3px;
+  background-color: white;
+  padding: 15px 0px 40px 0px;
+  margin: 40px 70px 60px 70px;
+  box-shadow: 0px 0px 80px rgb(219, 217, 217);
+}
+
+#navigationbar {
+  width: 200px; /* Sätter en fast bredd på navigationsmenyn */
+}
+
+.information {
+  flex: 1; /* Gör att informationssektionen tar upp resten av utrymmet */
+  padding: 20px; 
+  background-color: green; 
+  margin: 20px 90px 10px 70px;
+  
+}
+
+.content-section {
+  display: none; /* Dölj alla sektioner som standard */
+}
+
+.content-section:first-child {
+  display: block; /* Visa den första sektionen som standard (välkomstsidan) */
+}
+ 
+.MainContent {
+  display: flex;
+  flex-direction: row; /* Behåll radlayout för navigation och information */
+  gap: 20px;
+}
+/*  ************ ****Time Conter Down  **** *********/
+#TimeCountDown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;  
+  color: black;
+}
+
+#TimeCountDown div {
+  margin: 0 50px;
+  text-align: center;
+  font-family: "Bodoni Moda SC", serif;
+}
+
+#TimeCountDown div span {
+  display: block;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 3px;
+}
+
+/*  ******** **** Time Conter Down FÖR  linje OCH texten **** ****  */
+hr {
+  border: 0; /* Tar bort standardborder */
+  height: 1px; /* Sätter höjden på linjen */
+  background: #333; /* Sätter färgen på linjen */
+  
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+.TimerCountText{
+  text-align: center;
+  font-size: 40px;
+  font-family: "Bodoni Moda SC", serif; 
+}
+
+.HelaTimeCountDown {
+  margin-top: 20px; /* Lägg till lite utrymme ovanför */
+  text-align: center;
+}
