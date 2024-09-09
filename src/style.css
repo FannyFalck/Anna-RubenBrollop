@@ -1,26 +1,29 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('.jpeg');
-  background-size: cover; /* Täcker hela ytan men kan beskära bilden */
+  background-image: url('images/backgoundForest2.jpg');
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 .framsidabild {
-  width: calc(100% - 20px); /* 100% av förälderns bredd minus 20px (10px marginal på varje sida) */
+  width: calc(100% - 380px); /* 100% av förälderns bredd minus 20px (10px marginal på varje sida) */
   height: auto; /* Bevarar bildens proportioner */
-  margin: 10px; /* Lägger till en 10px marginal runt hela bilden */
+  margin: 40px;
   box-sizing: border-box; /* Inkluderar padding och border i elementets totala bredd/höjd */
   border-radius: 3px;
 }
-
+.framsidabildContainer {
+  display: flex;
+  justify-content: center;
+}
 
 .valkomstext {
   position: absolute; /* Placera texten ovanpå bilden */
   top: 20px; /* Justera vertikal placering av texten */
-  left: 20px; /* Justera horisontell placering av texten */
+  left: 600px; /* Justera horisontell placering av texten */
   color: black; /* Vit textfärg för att synas mot bilden */
   font-size: 56px; /* Justera textstorleken efter behov */
   font-family: "Bodoni Moda SC", serif;
@@ -42,7 +45,7 @@ ul#mynav li {
 
 ul#mynav li a {
   text-decoration: none; 
-  color: black;
+  color: rgb(6, 56, 2);
   display: block; /* Gör länkarna till blockelement så att hela listobjektet är klickbart */
   padding: 15px; /* Lägger till lite utrymme runt länkarna för bättre klickbarhet */
   font-size: 20px;
@@ -61,10 +64,10 @@ ul#mynav li a:hover {
   display: flex; /* Gör MainCenterBox till en flex container */
   flex-direction: column; /* Lägg till detta för att stapla elementen vertikalt */
   border-radius: 3px;
-  background-color: white;
+  background-color: rgb(93, 152, 93);
   padding: 15px 0px 40px 0px;
   margin: 40px 70px 60px 70px;
-  box-shadow: 0px 0px 80px rgb(219, 217, 217);
+  box-shadow: 0px 0px 80px white;
 }
 
 #navigationbar {
@@ -74,8 +77,9 @@ ul#mynav li a:hover {
 .information {
   flex: 1; /* Gör att informationssektionen tar upp resten av utrymmet */
   padding: 20px; 
-  background-color: green; 
+  background-color: beige;
   margin: 20px 90px 10px 70px;
+  border-radius: 3px;
   
 }
 
@@ -133,4 +137,10 @@ hr {
 .HelaTimeCountDown {
   margin-top: 20px; /* Lägg till lite utrymme ovanför */
   text-align: center;
+}
+
+.fannyCopyright {
+  text-align: left;
+  margin-left: 30px;
+  color: white;
 }
