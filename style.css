@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('images/backgoundForest2.jpg');
+  background-image: url("images/backgoundForest2.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -9,9 +9,11 @@ body {
 }
 
 .framsidabild {
-  width: calc(100% - 380px); /* 100% av förälderns bredd minus 20px (10px marginal på varje sida) */
-  height: auto; /* Bevarar bildens proportioner */
-  margin: 40px;
+  padding: 100px;
+  height: 1000px;
+  width: 100vw;
+  object-fit: cover;
+  object-position: center;
   box-sizing: border-box; /* Inkluderar padding och border i elementets totala bredd/höjd */
   border-radius: 3px;
 }
@@ -28,7 +30,6 @@ body {
   font-size: 56px; /* Justera textstorleken efter behov */
   font-family: "Great Vibes", cursive;
   padding: 10px; /* Lägger till lite utrymme runt texten */
-  
 }
 
 /* **** **** **** Navigationbar hover mus  ******** **** */
@@ -44,7 +45,7 @@ ul#mynav li {
 }
 
 ul#mynav li a {
-  text-decoration: none; 
+  text-decoration: none;
   opacity: 80%;
   color: white;
   display: block; /* Gör länkarna till blockelement så att hela listobjektet är klickbart */
@@ -77,11 +78,10 @@ ul#mynav li a:hover {
 
 .information {
   flex: 1; /* Gör att informationssektionen tar upp resten av utrymmet */
-  padding: 20px; 
+  padding: 20px;
   background-color: #a0bda5;
   margin: 20px 90px 10px 70px;
   border-radius: 3px;
-  
 }
 
 .content-section {
@@ -91,7 +91,7 @@ ul#mynav li a:hover {
 .content-section:first-child {
   display: block; /* Visa den första sektionen som standard (välkomstsidan) */
 }
- 
+
 .MainContent {
   display: flex;
   flex-direction: row; /* Behåll radlayout för navigation och information */
@@ -102,7 +102,7 @@ ul#mynav li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;  
+  font-size: 20px;
   color: black;
 }
 
@@ -124,15 +124,15 @@ hr {
   border: 0; /* Tar bort standardborder */
   height: 1px; /* Sätter höjden på linjen */
   background: #333; /* Sätter färgen på linjen */
-  
+
   max-width: 500px;
   margin-bottom: 40px;
 }
 
-.TimerCountText{
+.TimerCountText {
   text-align: center;
   font-size: 40px;
-  font-family: "Bodoni Moda SC", serif; 
+  font-family: "Bodoni Moda SC", serif;
 }
 
 .HelaTimeCountDown {
@@ -146,10 +146,15 @@ hr {
   color: white;
 }
 
+.carousel-item > img {
+  max-width: 100%;
+}
 
-/* Carusell */
-.swiper-slide img {
-  width: 50%; /* Anpassar bilden till karusellens bredd */
-  height: 50%; /* Gör så att bilden fyller hela karusellens höjd */
-  object-fit: contain; /* Gör så att bilden inte blir förvrängd */
+.carousel {
+  width: 200px;
+}
+
+.style-cauresell-bilder {
+  display: flex;
+  gap: 10px;
 }
