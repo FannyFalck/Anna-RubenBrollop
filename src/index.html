@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Imperial+Script&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caramel&family=Great+Vibes&family=Imperial+Script&family=Pinyon+Script&family=Satisfy&display=swap" rel="stylesheet">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caramel&family=Imperial+Script&family=Pinyon+Script&display=swap');
       </style>
@@ -20,8 +27,8 @@
   <body>
     <header>
       <div class="framsidabildContainer">
-        <p class="valkomstext">Vi skall gifta oss <br> Anna & Ruben</p>
-        <img class="framsidabild" src="images/bild1.jpeg" alt="Anna ich Ruben vid Åre">
+        <p class="valkomstext">Bröllop - Hochzeit <br> Anna & Ruben <br> 2025</p>
+        <img class="framsidabild" src="images/bild20.jpg" alt="Anna och Ruben vid Åre">
       </div>
     </header>
 
@@ -36,6 +43,7 @@
             <li><a href="#" data-target="brollopsfolje">Bröllopsfölje</a></li>
             <li><a href="#" data-target="onskelista">Önskelista</a></li>
             <li><a href="#" data-target="bildgalleri">Bildgalleri</a></li>
+            <li><a href="#" data-target="rsvp">R.S.V.P.</a></li>
           </ul>
         </nav>
   
@@ -75,7 +83,40 @@
             <h2>Bildgalleri</h2>
             <p>Bilder från våra bästa stunder.</p>
             <p>Bilder från Annas möhippa.</p>
-          </div>
+          
+
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/bild11.jpg" alt="Image 1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/bild12.jpg" alt="Image 2">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/bild13.JPG" alt="Image 3">
+                </div>
+                
+              </div> 
+              
+              
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              
+              
+              <div class="swiper-pagination"></div>
+            </div> 
+          
+        </div> <!-- slut på bildgaleri -->
+
+
+        <div id="rsvp" class="content-section" style="display: none;"> 
+          <h2>rsvp</h2>
+          <p>rsvp 
+            hej 
+          </p>
+        </div>
+
         </div> <!-- Slut Information -->
       </div> <!-- Slut MainContent -->
 
