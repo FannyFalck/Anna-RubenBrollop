@@ -146,14 +146,13 @@ hr {
   color: white;
 }
 
+/* ********* ********** ******** carousel ************** **************/
 .carousel-item > img {
   max-width: 100%;
 }
-
 .carousel {
   width: 200px;
 }
-
 .style-cauresell-bilder {
   display: flex;
   gap: 10px;
