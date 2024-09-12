@@ -1,3 +1,4 @@
+//***********************************************************************************************
 // ******* ******* Hantering av navigerings sido byte ******* ******* 
 document.querySelectorAll('#mynav li a').forEach(link => {
   link.addEventListener('click', function (e) {
@@ -14,7 +15,7 @@ document.querySelectorAll('#mynav li a').forEach(link => {
   });
 });
 
-
+//***********************************************************************************************
 // ******* ******* Time Conter Down ******* ******* 
 function TimeCountDown() {
   // Sätt datumet för nedräkningen
