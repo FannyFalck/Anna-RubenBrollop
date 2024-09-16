@@ -8,6 +8,10 @@ body {
   /* background-attachment: fixed; */
 }
 
+header .menuToggle{
+  position: fixed;
+}
+
 .framsidabild {
   padding: 100px;
   height: 1000px;
@@ -200,9 +204,9 @@ ul#mynav li a {
   #menuToggle {
     display: block; 
     position: fixed; 
-    top: 10px;
-    left: 10px;
     z-index: 1000; 
+    background-color: green;
+    width: 100%;
   }
 
   ul#mynav {
@@ -293,5 +297,13 @@ ul#mynav li a {
     font-size: 25px; 
     font-family: "Great Vibes", cursive;
     padding: 15x; 
+  }
+}
+
+@media (max-width: 375px) {
+  .style-cauresell-bilder {
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
   }
 }
