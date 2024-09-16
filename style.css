@@ -25,7 +25,7 @@ body {
 .valkomstext {
   position: absolute; /* Placera texten ovanpå bilden */
   top: 20px; /* Justera vertikal placering av texten */
-  left: 600px; /* Justera horisontell placering av texten */
+  left: 500px; /* Justera horisontell placering av texten */
   color: #304d20; /* Vit textfärg för att synas mot bilden */
   font-size: 56px; /* Justera textstorleken efter behov */
   font-family: "Great Vibes", cursive;
@@ -278,8 +278,20 @@ ul#mynav li a {
 /*  ************ **** Information   **** *********/
 @media (max-width: 375px) {
   .information {
-    width: 200px; 
     margin: -5px 10px 0px -210px;
      
+  }
+}
+
+/*  ************ **** Välkomstext   **** *********/
+@media (max-width: 375px) {
+  .valkomstext {
+    position: absolute; 
+    top: 50px; 
+    left: 80px; 
+    color: #304d20; 
+    font-size: 25px; 
+    font-family: "Great Vibes", cursive;
+    padding: 15x; 
   }
 }
