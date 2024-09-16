@@ -98,7 +98,7 @@ ul#mynav li a:hover {
   gap: 20px;
 }
 /*  ************ ****Time Conter Down  **** *********/
-#TimeCountDown {
+#TimeCountDown { /*timmar, minuter */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,7 +112,7 @@ ul#mynav li a:hover {
   font-family: "Bodoni Moda SC", serif;
 }
 
-#TimeCountDown div span {
+#TimeCountDown div span { /*siffrorna */
   display: block;
   font-size: 30px;
   color: black;
@@ -121,12 +121,10 @@ ul#mynav li a:hover {
 
 /*  ******** **** Time Conter Down FÖR  linje OCH texten **** ****  */
 hr {
-  border: 0; /* Tar bort standardborder */
-  height: 1px; /* Sätter höjden på linjen */
-  background: #333; /* Sätter färgen på linjen */
-
-  max-width: 500px;
-  margin-bottom: 40px;
+  border: none; 
+  height: 2px; 
+  background-color: #333; 
+  width: 80%; 
 }
 
 .TimerCountText {
@@ -137,8 +135,11 @@ hr {
 }
 
 .HelaTimeCountDown {
-  margin-top: 20px; /* Lägg till lite utrymme ovanför */
-  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  margin-top: 40px;
 }
 
 .fannyCopyright {
@@ -247,4 +248,28 @@ ul#mynav li a {
     background-size: cover; 
     background-position: center; 
   }
+}
+
+/*  ************ ****Time Conter Down  **** *********/
+@media (max-width: 375px) {
+  hr {
+    width: 80%; 
+  }
+
+  .TimerCountText {
+    font-size: 25px; /* bröllopsdag om*/
+  }
+
+  #TimeCountDown div {
+    margin: 5px; 
+  }
+
+  #TimeCountDown div span {
+    font-size: 20px; /* Siffrorna */
+    margin-bottom: 3px;
+  }
+
+  #TimeCountDown{ 
+    font-size: 15px; /*timmar, minuter */
+  } 
 }
