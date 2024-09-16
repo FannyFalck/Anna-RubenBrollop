@@ -8,8 +8,10 @@ body {
   /* background-attachment: fixed; */
 }
 
-header .menuToggle{
+header #menuToggle{
   position: fixed;
+  
+  
 }
 
 .framsidabild {
@@ -205,31 +207,22 @@ ul#mynav li a {
     display: block; 
     position: fixed; 
     z-index: 1000; 
-    background-color: green;
+    background-color: #304d20;
     width: 100%;
+    text-align: left ;
   }
 
   ul#mynav {
-    display: none; 
-    flex-direction: column; 
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     width: 100%;
     position: fixed; 
     top: 50px; 
     left: 0;
     background-color: #304d20; 
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 999; 
+    
   }
 
-  ul#mynav.visible {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* Bakgrundbild skogen  */
