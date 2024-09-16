@@ -61,7 +61,7 @@ ul#mynav li a:hover {
 }
 
 /*  ******** *************** ****************** *************************************** ************ */
-/*  ******** **** **** FLEX BOX CENTER FÖR ALLA TRE , navigationbar, infoamtion  och timercontdown ************ */
+/*  ******** **** **** FLEX BOX CENTER FÖR ALLA TRE , navigationbar, information  och timercontdown ************ */
 .MainCenterBox {
   display: flex; /* Gör MainCenterBox till en flex container */
   flex-direction: column; /* Lägg till detta för att stapla elementen vertikalt */
@@ -161,9 +161,9 @@ hr {
 
 
 
-
-/* ******** ******** ********  navigationsmenyn ******** ******** ******** ********   */
-/* ******** ******** ********  navigationsmenyn ******** ******** ******** ********   */
+/* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
+/* ******** ******** ********  NAVIGERINGMENY @media query ******** ******** ******** ********   */
+/* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
 
 #navigationbar {
   position: relative;
@@ -223,5 +223,28 @@ ul#mynav li a {
     display: block;
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Bakgrundbild skogen  */
+@media (max-width: 375px) {
+  body {
+    background-size: contain; 
+    background-position: top; 
+    background-attachment: scroll; 
+  }
+}
+
+/* Bakgrund för MainCenterBox */
+@media (max-width: 375px) {
+  .MainCenterBox {
+    margin: 4px; 
+    border-radius: 0; 
+    width: 100vw; 
+    height: 100vh; 
+  }
+  body {
+    background-size: cover; 
+    background-position: center; 
   }
 }
