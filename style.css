@@ -210,9 +210,15 @@ ul#mynav li a {
     background-color: #304d20;
     width: 100%;
     text-align: left ;
+    
   }
 
   ul#mynav {
+    display: none; 
+    flex-direction: column; 
+    opacity: 0;
+    transform: translateY(-12px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     width: 100%;
     position: fixed; 
     top: 50px; 
@@ -224,7 +230,12 @@ ul#mynav li a {
   }
 
 }
-
+  ul#mynav.visible {
+    display: block;
+    opacity: 1;
+    
+  } 
+  
 /* Bakgrundbild skogen  */
 @media (max-width: 375px) {
   body {
