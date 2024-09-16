@@ -133,6 +133,7 @@ hr {
   text-align: center;
   font-size: 40px;
   font-family: "Bodoni Moda SC", serif;
+  color: black;
 }
 
 .HelaTimeCountDown {
@@ -156,4 +157,71 @@ hr {
 .style-cauresell-bilder {
   display: flex;
   gap: 10px;
+}
+
+
+
+
+/* ******** ******** ********  navigationsmenyn ******** ******** ******** ********   */
+/* ******** ******** ********  navigationsmenyn ******** ******** ******** ********   */
+
+#navigationbar {
+  position: relative;
+  display: flex;
+  justify-content: flex-start; 
+}
+
+#menuToggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+ul#mynav {
+  list-style: none;
+  padding: 0;
+  display: block; 
+  gap: 20px; 
+}
+
+ul#mynav li a {
+  text-decoration: none;
+  color: white; 
+  font-size: 18px;
+  padding: 10px 20px; 
+  display: block; 
+}
+
+@media (max-width: 375px) {
+  #menuToggle {
+    display: block; 
+    position: fixed; 
+    top: 10px;
+    left: 10px;
+    z-index: 1000; 
+  }
+
+  ul#mynav {
+    display: none; 
+    flex-direction: column; 
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    width: 100%;
+    position: fixed; 
+    top: 50px; 
+    left: 0;
+    background-color: #304d20; 
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999; 
+  }
+
+  ul#mynav.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

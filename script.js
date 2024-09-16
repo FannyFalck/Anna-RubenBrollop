@@ -47,3 +47,10 @@ function TimeCountDown() {
 }
 
 TimeCountDown();
+
+//***********************************************************************************************
+// ******* ******* menuToggle ******* ******* 
+document.getElementById('menuToggle').addEventListener('click', function() {
+  var nav = document.getElementById('mynav');
+  nav.classList.toggle('visible');
+});
