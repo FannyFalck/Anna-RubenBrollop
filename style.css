@@ -73,28 +73,29 @@ ul#mynav li a:hover {
 }
 
 #navigationbar {
-  width: 200px; /* Sätter en fast bredd på navigationsmenyn */
+  width: 200px; 
 }
 
 .information {
-  flex: 1; /* Gör att informationssektionen tar upp resten av utrymmet */
+  flex: 1; 
   padding: 20px;
   background-color: #a0bda5;
   margin: 20px 90px 10px 70px;
   border-radius: 3px;
+  box-sizing: border-box;
 }
 
 .content-section {
-  display: none; /* Dölj alla sektioner som standard */
+  display: none; 
 }
 
 .content-section:first-child {
-  display: block; /* Visa den första sektionen som standard (välkomstsidan) */
+  display: block; 
 }
 
 .MainContent {
   display: flex;
-  flex-direction: row; /* Behåll radlayout för navigation och information */
+  flex-direction: row; 
   gap: 20px;
 }
 /*  ************ ****Time Conter Down  **** *********/
@@ -272,4 +273,13 @@ ul#mynav li a {
   #TimeCountDown{ 
     font-size: 15px; /*timmar, minuter */
   } 
+}
+
+/*  ************ **** Information   **** *********/
+@media (max-width: 375px) {
+  .information {
+    width: 200px; 
+    margin: -5px 10px 0px -210px;
+     
+  }
 }
