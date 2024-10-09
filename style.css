@@ -165,6 +165,7 @@ hr {
   text-align: left;
   margin-left: 30px;
   color: white;
+  
 }
 
 /* ********* ********** ******** carousel ************** **************/
@@ -224,19 +225,18 @@ ul#mynav {
     width: 100%;
     position: fixed; 
     top: 30px; 
-    height: 999px;
-    overflow: hidden;
     left: 0;
     background-color:#DDF7D1; 
     padding: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 2;
+    overflow: hidden;
   }
-
 }
-  ul#mynav.visible {
-    max-height: 460px;
-  } 
+ul#mynav.visible {
+  max-height: 70vh; /* Begränsa höjden på menyn så att den kan skrollas */
+  overflow-y: auto; /* Gör menyn skrollbar */
+}
   
 /* Bakgrundbild skogen  */
 @media (max-width: 375px) {
