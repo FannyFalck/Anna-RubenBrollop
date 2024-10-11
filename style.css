@@ -37,11 +37,15 @@ header #menuToggle{
   padding: 10px; /* Lägger till lite utrymme runt texten */
 }
 
+h2 {
+  font-family: "Cinzel Decorative", serif; /*här är fonten för alla rubrikerna  */
+}
+
 /* **** **** **** Navigationbar hover mus  ******** **** */
 ul#mynav {
-  list-style-type: none; /* Tar bort punktlistorna */
-  padding-left: 40px; /* Tar bort standard padding */
-  margin: 0; /* Tar bort standard margin */
+  list-style-type: none; 
+  padding-left: 40px; 
+  margin: 0; 
   /* font-family: "Bodoni Moda SC", serif; */
 }
 
@@ -53,17 +57,17 @@ ul#mynav li a {
   text-decoration: none;
   opacity: 80%;
   color: white;
-  display: block; /* Gör länkarna till blockelement så att hela listobjektet är klickbart */
-  padding: 15px; /* Lägger till lite utrymme runt länkarna för bättre klickbarhet */
+  display: block; 
+  padding: 15px; 
   font-size: 40px;
   font-family: "Cinzel Decorative", serif;
-  cursor: pointer; /* Ändra till pekare för att visa att det är klickbart */
-  transition: font-size 0.2s ease, transform 0.2s ease; /* För smidig övergång vid hover */
+  cursor: pointer; 
+  transition: font-size 0.2s ease, transform 0.2s ease; 
 }
 
 ul#mynav li a:hover {
-  font-size: 22px; /* Öka textstorleken vid hover */
-  transform: scale(1.05); /* Gör texten något större vid hover */
+  font-size: 22px; 
+  transform: scale(1.05);
 }
 
 /*  ******** *************** ****************** *************************************** ************ */
@@ -88,12 +92,11 @@ ul#mynav li a:hover {
   background-color: #F4FBF2;
   margin: 20px 90px 10px 70px;
   border-radius: 3px;
-  font-family: "Cinzel Decorative", serif;
+  /* font-family: "Cinzel Decorative", serif;   HÄR SKA rätt font vara, anna måste välja en  */
+  /* font-family: "Ruge Boogie", cursive; finns på HMLT sidan : informationsbrödtext  */
   box-sizing: border-box;
 }
-.information p{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 
 ul#mynav li a {
   text-decoration: none;
