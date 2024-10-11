@@ -9,7 +9,7 @@ body {
 
 header #menuToggle{
   position: fixed;
-  
+
   
 }
 
@@ -216,6 +216,8 @@ ul#mynav {
     background-color: #DDF7D1;  
     width: 100%;
     text-align: left ;
+    color: black;
+    text-decoration: none
   }
 
   ul#mynav {
