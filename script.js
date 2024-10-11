@@ -1,15 +1,15 @@
 //***********************************************************************************************
 // ******* ******* Hantering av navigerings sido byte ******* *******
-document.querySelectorAll("#mynav li a").forEach((link) => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
+document.querySelectorAll('a[data-target]').forEach((link) => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();  // Förhindra standardåtgärden (som att scrolla upp)
 
-    // Hämta alla sektioner och dölj dem
+    // Dölj alla sektioner
     document.querySelectorAll(".content-section").forEach((section) => {
       section.style.display = "none";
     });
 
-    // Visa den sektion som motsvarar den klickade länken
+    // Visa den sektion som länken pekar på
     const target = this.getAttribute("data-target");
     document.getElementById(target).style.display = "block";
   });
