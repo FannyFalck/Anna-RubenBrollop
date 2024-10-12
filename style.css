@@ -183,7 +183,15 @@ hr {
   gap: 10px;
 }
 
+.OSAlinkValkomen a{
+  text-decoration: none; 
+  color: black;
+  cursor: pointer;
+}
 
+.OSAlinkValkomen a:hover {
+  text-decoration: underline; 
+} 
 
 /* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
 /* ******** ******** ********  NAVIGERINGMENY @media query ******** ******** ******** ********   */
