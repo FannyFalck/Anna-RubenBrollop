@@ -1,8 +1,12 @@
 //***********************************************************************************************
 // ******* ******* Hantering av navigerings sido byte ******* *******
-document.querySelectorAll('a[data-target]').forEach((link) => {
+// Hämtar länkar som har 'data-target' attribut
+document.querySelectorAll('a[data-target]').forEach(link => {
   link.addEventListener('click', function (e) {
-    e.preventDefault();  // Förhindra standardåtgärden (som att scrolla upp)
+    e.preventDefault();
+
+    // Felsökning: skriv ut vilken sektion som är tänkt att visas
+    console.log('Navigerar till sektion: ' + this.getAttribute('data-target'));
 
     // Dölj alla sektioner
     document.querySelectorAll(".content-section").forEach((section) => {
@@ -11,7 +15,17 @@ document.querySelectorAll('a[data-target]').forEach((link) => {
 
     // Visa den sektion som länken pekar på
     const target = this.getAttribute("data-target");
-    document.getElementById(target).style.display = "block";
+    const targetElement = document.getElementById(target);
+
+    if (targetElement) {
+      targetElement.style.display = "block";
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    } else {
+      console.log('Sektionen hittades inte: ' + target);
+    }
   });
 });
 
