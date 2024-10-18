@@ -28,17 +28,18 @@ header #menuToggle{
 }
 
 .valkomstext {
-  position: absolute; /* Placera texten ovanpå bilden */
-  top: 20px; /* Justera vertikal placering av texten */
-  left: 300px; /* Justera horisontell placering av texten */
-  color: rgb(11, 62, 11); /* Vit textfärg för att synas mot bilden */
-  font-size: 56px; /* Justera textstorleken efter behov */
+  position: absolute; 
+  top: 20px; 
+  left: 300px; 
+  color: rgb(11, 62, 11); 
+  font-size: 56px; 
   font-family: "Tangerine", cursive;
-  padding: 10px; /* Lägger till lite utrymme runt texten */
+  padding: 10px;
 }
 
 h2 {
   font-family: "Cinzel Decorative", serif; /*här är fonten för alla rubrikerna  */
+  
 }
 
 /* **** **** **** Navigationbar hover mus  ******** **** */
@@ -166,7 +167,7 @@ hr {
 
 .fannyCopyright {
   text-align: left;
-  margin-left: 30px;
+  margin-left: 10px;
   color: white;
   
 }
@@ -183,6 +184,9 @@ hr {
   gap: 10px;
 }
 
+
+
+/*  ********* ********** ******** Links in brödtext or klickbara  ********* ********** ******** */
 .OSAlinkValkomen a{
   text-decoration: none; 
   color: black;
@@ -192,6 +196,18 @@ hr {
 .OSAlinkValkomen a:hover {
   text-decoration: underline; 
 } 
+
+.KungshagaWebb {
+  font-size: 18px; 
+  text-decoration: none; 
+  color: black;
+}
+.KungshagaWebb:hover{
+  text-decoration: underline; 
+}
+
+
+
 
 /* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
 /* ******** ******** ********  NAVIGERINGMENY @media query ******** ******** ******** ********   */
