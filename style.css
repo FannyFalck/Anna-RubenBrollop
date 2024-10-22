@@ -93,7 +93,7 @@ ul#mynav li a:hover {
   background-color: #F4FBF2;
   margin: 20px 50px 10px 70px;
   border-radius: 3px;
-  /* font-family: "Cinzel Decorative", serif;   HÄR SKA rätt font vara, anna måste välja en  */
+  font-family: "Old Standard TT", serif;
   /* font-family: "Ruge Boogie", cursive; finns på HMLT sidan : informationsbrödtext  */
   box-sizing: border-box;
 }
@@ -197,14 +197,6 @@ hr {
   text-decoration: underline; 
 } 
 
-.KungshagaWebb {
-  font-size: 18px; 
-  text-decoration: none; 
-  color: black;
-}
-.KungshagaWebb:hover{
-  text-decoration: underline; 
-}
 
 
 /* ********** ******** Button and navigationbar ********** ******** */
