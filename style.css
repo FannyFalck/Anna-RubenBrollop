@@ -145,9 +145,6 @@ ul#mynav li a {
 /*  ******** **** Time Conter Down FÖR  linje OCH texten **** ****  */
 hr {
   border: none; 
-  height: 2px; 
-  background-color: #333; 
-  width: 80%; 
 }
 
 .TimerCountText {
@@ -220,6 +217,26 @@ ul#mynav {
   padding-left: 10px;
   display: block; 
   gap: 20px; 
+}
+
+
+/* ******** Ramrunt festschema ******** */
+.ramrunt {
+  border: 2px solid #cccccc; 
+  padding: 20px; 
+  margin: 20px 0;
+  border-radius: 10px; 
+  background-color: #f9f9f9; 
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.festhelglinjer {
+  height: 2px;  
+  background-color:gray; 
+  width: 60%;        
+  display: block;  
+  margin: 15px auto;   
+  border: none;        
 }
 
 /* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
