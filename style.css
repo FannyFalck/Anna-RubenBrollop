@@ -13,24 +13,37 @@ header #menuToggle{
   
 }
 
-.framsidabild {
-  padding: 100px;
-  height: 1000px;
-  width: 100vw;
-  object-fit: cover;
-  object-position: center;
-  box-sizing: border-box; /* Inkluderar padding och border i elementets totala bredd/höjd */
-  border-radius: 3px;
-}
 .framsidabildContainer {
   display: flex;
   justify-content: center;
+  padding: 30px 30px 10px 30px; 
+}
+.framsidabild {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.framsidabild.mobile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .framsidabildContainer {
+    padding: 30px 10px 10px 10px; 
+  }
+  .framsidabild.desktop {
+    display: none; 
+  }
+  .framsidabild.mobile {
+    display: block; 
+  }
 }
 
 .valkomstext {
   position: absolute; 
-  top: 20px; 
-  left: 300px; 
+  top: 50px; 
+  left: 350px; 
   color: rgb(11, 62, 11); 
   font-size: 56px; 
   font-family: "Tangerine", cursive;
@@ -39,9 +52,8 @@ header #menuToggle{
 
 h2 {
   font-family: "Cinzel Decorative", serif; /*här är fonten för alla rubrikerna  */
-  
 }
-
+ 
 /* **** **** **** Navigationbar hover mus  ******** **** */
 ul#mynav {
   list-style-type: none; 
@@ -144,7 +156,7 @@ ul#mynav li a {
 
 /*  ******** **** Time Conter Down FÖR  linje OCH texten **** ****  */
 hr {
-  border: none; 
+  width: 80%;
 }
 
 .TimerCountText {
