@@ -249,6 +249,20 @@ ul#mynav {
   margin: 15px auto;   
   border: none;        
 }
+/* ************  ******** ** Flagga  ****** ****** */ 
+.flaggSWE, .flaggGER {
+  width: 90px; /* Gör flaggorna mindre */
+  height: auto;
+  cursor: pointer;
+  position: fixed; 
+  top: 10px; 
+}
+.flaggSWE {
+  right: 110px;
+}
+.flaggGER {
+  right: 10px;
+}
 
 /* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
 /* ******** ******** ********  NAVIGERINGMENY @media query 375 ******** ******** ******** ********   */
@@ -362,7 +376,7 @@ ul#mynav {
     gap: 10px;
   }
 
-    /* ************  ******** ****Flagga  ****** ****** */
+  /* ************  ******** ****Flagga  ****** ****** */
   .flaggSWE, .flaggGER {
     width: 50px; /* storlek  på flaggan */
     height: auto;
