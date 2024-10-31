@@ -46,6 +46,7 @@ header #menuToggle{
   font-size: 56px; 
   font-family: "Tangerine", cursive;
   padding: 10px;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 
 h2 {
@@ -359,6 +360,24 @@ ul#mynav {
     display: flex;
     flex-flow: wrap;
     gap: 10px;
+  }
+
+    /* ************  ******** ****Flagga  ****** ****** */
+  .flaggSWE, .flaggGER {
+    width: 50px; /* storlek  på flaggan */
+    height: auto;
+    cursor: pointer;
+    position: fixed; 
+    top: 4px; 
+    z-index: 2500; 
+  }
+
+  .flaggSWE {
+    right: 70px; 
+  }
+
+  .flaggGER {
+    right: 10px; 
   }
 }
 
