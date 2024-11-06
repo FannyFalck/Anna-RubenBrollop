@@ -40,10 +40,10 @@ header #menuToggle{
 
 .valkomstext {
   position: absolute; 
-  top: 50px; 
-  left: 350px; 
-  color: rgb(11, 62, 11); 
-  font-size: 56px; 
+  top: 80px; 
+  text-align: center;
+  color: white; 
+  font-size: 70px; 
   font-family: "Tangerine", cursive;
   padding: 10px;
   /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
@@ -264,21 +264,6 @@ ul#mynav {
   right: 10px;
 }
 
-/* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
-/* ******** ******** ********  NAVIGERINGMENY @media query 375 ******** ******** ******** ********   */
-/* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */  
-@media (max-width: 375px) {
-  .valkomstext {
-    font-size: 18px;
-    top: 30px;
-    left: 40px;
-  }
-
-  .style-cauresell-bilder {
-    flex-direction: column;
-    gap: 5px;
-  }
-} 
 
 /* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
 /* ******** ******** ********  NAVIGERINGMENY @media query 900 ******** ******** ******** ********   */
@@ -362,12 +347,11 @@ ul#mynav {
 
   /*  ************ **** Välkomstext   **** *********/
   .valkomstext {
-    position: absolute; 
-    top: 50px; 
+    top: 60px; 
     left: 80px; 
-    color: #304d20; 
-    font-size: 25px; 
-    font-family: "Great Vibes", cursive;
+    color: white; 
+    text-align: center;
+    font-size: 60px;
   }
 
   .style-cauresell-bilder {
@@ -395,3 +379,61 @@ ul#mynav {
   }
 }
 
+
+@media (max-width: 700px) {
+ .valkomstext {
+    top: 60px; /* Placera den från toppen av fönstret */
+    left: 130px; /* Placera den från vänster av fönstret */
+    font-size: 40px; /* Anpassa storleken */
+    color: white;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .valkomstext {
+     top: 60px; /* Placera den från toppen av fönstret */
+     left: 80px; /* Placera den från vänster av fönstret */
+     font-size: 40px; /* Anpassa storleken */
+     color: white;
+     text-align: center;
+   }
+ }
+
+ @media (max-width: 540px) {
+  .valkomstext {
+     top: 60px; /* Placera den från toppen av fönstret */
+     left: 50px; /* Placera den från vänster av fönstret */
+     font-size: 38px; /* Anpassa storleken */
+     color: white;
+     text-align: center;
+   }
+ }
+
+@media (max-width: 430px) {
+  .valkomstext {
+    top: 55px; /* Justera efter behov */
+    left: 45px; /* Justera efter behov */
+    font-size: 30px; /* Mindre textstorlek */
+    text-align: center;
+    color: white;
+  }
+}
+
+/* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
+/* ******** ******** ********  NAVIGERINGMENY @media query 375 ******** ******** ******** ********   */
+/* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */  
+@media (max-width: 375px) {
+  .valkomstext {
+    top: 60px;
+    left: 50px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+  }
+
+.style-cauresell-bilder {
+  flex-direction: column;
+  gap: 5px;
+}
+} 
