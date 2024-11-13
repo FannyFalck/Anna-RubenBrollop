@@ -80,6 +80,7 @@ document.querySelectorAll("#mynav li").forEach((element) => {
     var nav = document.getElementById("mynav");
     nav.classList.toggle("visible");
   });
+
 });
 
 /**
@@ -208,4 +209,3 @@ class LanguageHandler {
     }
   }
 }
-
