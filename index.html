@@ -84,29 +84,7 @@
 
 
       <div class="information">
-        <div id="valkommen" class="content-section">
-          <h2>Välkommen </h2>
-          <p class="Välkommentext">
-            Vi ska gifta oss, och vi vill fira det med våra nära och kära! <br> <br>
-            Bröllop och fest 23 augusti 2025, på Kungshaga Hotell i Orsa. <br> <br>
-            Du som fått vår inbjudan med QR-koden eller länken till denna hemsida är en av de personer som, på ett eller
-            annat vis, är de bästa i våra liv. Vi vill så gärna att du ska komma till vårt bröllop och dela den dagen
-            med oss! <br>
-            Vi har samlat all information här på hemsidan, på ett och samma ställe för att underlätta för oss alla. Här
-            finner du information om vigsel, fest, boende och praktiska detaljer och lite annat som ni kan tänkas vilja
-            veta. <br>
-
-            På denna hemsida kan ni bland annat:
-          <ul class="OSAlinkValkomen">
-            <li><a href="#" data-target="OSA">Anmäla er till bröllopet.</a></li>
-            <li><a href="#" data-target="Spex">Anmäla er till våra toastmasters för att spexa eller hålla tal under
-                middagen </a></li>
-            <li> Hålla koll på vad som händer på vilken plats under helgen </li>
-          </ul> <br>
-
-          <b> O.S.A senast den <u>23 juni</u></b>, så att vi kan göra bästa möjliga planering!
-          </p>
-        </div>
+        <div id="valkommen" class="content-section" data-translate> </div>
 
         <div id="brollopshelg" class="content-section" style="display: none">
           <h2>Bröllopshelg</h2>
@@ -361,57 +339,81 @@
     const mySections = [
       // ********* Navigationbar
       {
-        target: '#menu-valkommen',
-        swe: `Välkommen`,
-        ger: `Wilkommen`
+        target: '#menu-valkommen', swe: `Välkommen`, ger: `Wilkommen`
       },
       {
-        target: '#menu-brollopshelg',
-        swe: `Bröllopshelgen`,
-        ger: `Das Wochenende der Hochzeit`
+        target: '#menu-brollopshelg', swe: `Bröllopshelgen`, ger: `Das Wochenende der Hochzeit`
       },
       {
-        target: '#menu-boende',
-        swe: `Boende`,
-        ger: `Unterkunft`
+        target: '#menu-boende', swe: `Boende`, ger: `Unterkunft`
       },
       {
-        target: '#menu-resvagar',
-        swe: `Resvägar`,
-        ger: `Reisewege`
+        target: '#menu-resvagar', swe: `Resvägar`, ger: `Reisewege`
       },
       {
-        target: '#menu-onskelista',
-        swe: `Önskelista`,
-        ger: `Wunschliste`
+        target: '#menu-onskelista', swe: `Önskelista`, ger: `Wunschliste`
       },
       {
-        target: '#menu-osa',
-        swe: `O.S.A`,
-        ger: `U.A.w.g`
+        target: '#menu-osa', swe: `O.S.A`, ger: `U.A.w.g`
       },
       {
-        target: '#menu-spex',
-        swe: `Anmälan till spex och tal`,
-        ger: `Anmeldung für Unterhaltung und Rede`
+        target: '#menu-spex', swe: `Anmälan till spex och tal`, ger: `Anmeldung für Unterhaltung und Rede`
       },
       {
-        target: '#menu-brollopsfolje',
-        swe: `Bröllopsfölje`,
-        ger: `Hochzeitsgefolge`
+       target: '#menu-brollopsfolje', swe: `Bröllopsfölje`, ger: `Hochzeitsgefolge`
       },
       {
-        target: '#menu-bordplacering',
-        swe: `Bordplacering`,
-        ger: `Tischplatzierung`
+        target: '#menu-bordplacering', swe: `Bordplacering`, ger: `Tischplatzierung`
       },
       {
-        target: '#menu-bildgalleri',
-        swe: `Bildgalleri`,
-        ger: `Bildergalerie`
+        target: '#menu-bildgalleri', swe: `Bildgalleri`, ger: `Bildergalerie`
       },
+      // ************* *************** VÄLKOMMEN **************** *******************
 
+      { target:`#valkommen`,
+        swe: `
+        <h2>Välkommen </h2>
+          <p class="Välkommentext">
+            Vi ska gifta oss, och vi vill fira det med våra nära och kära! <br> <br>
+            Bröllop och fest 23 augusti 2025, på Kungshaga Hotell i Orsa. <br> <br>
+            Du som fått vår inbjudan med QR-koden eller länken till denna hemsida är en av de personer som, på ett eller
+            annat vis, är de bästa i våra liv. Vi vill så gärna att du ska komma till vårt bröllop och dela den dagen
+            med oss! <br>
+            Vi har samlat all information här på hemsidan, på ett och samma ställe för att underlätta för oss alla. Här
+            finner du information om vigsel, fest, boende och praktiska detaljer och lite annat som ni kan tänkas vilja
+            veta. <br>
 
+            På denna hemsida kan ni bland annat:
+            <ul class="OSAlinkValkomen">
+              <li><a href="#" data-target="OSA">Anmäla er till bröllopet.</a></li>
+              <li><a href="#" data-target="Spex">Anmäla er till våra toastmasters för att spexa eller hålla tal under middagen </a></li>
+              <li> Hålla koll på vad som händer på vilken plats under helgen </li>
+            </ul> <br>
+
+            <b> O.S.A senast den <u>23 juni</u></b>, så att vi kan göra bästa möjliga planering!
+          </p>
+          
+          `,
+          
+        ger:`
+        <h2>Willkommen </h2>
+        <p class="Välkommentext">
+         Wir werden heiraten und möchten diesen besonderen Tag mit unseren Liebsten feiern! <br><br> 
+            Die Hochzeit und das Fest finden am 23. August 2025 im Kungshaga Hotell in Orsa statt. <br><br> 
+            Du hast unsere Einladung mit dem QR-Code oder den Link zu dieser Website erhalten, weil du einer der Menschen bist, die auf die eine oder andere Weise die Besten in unserem Leben sind. Wir wünschen uns sehr, dass du zu unserer Hochzeit kommst und diesen Tag mit uns teilst! <br> 
+            Wir haben alle Informationen hier auf der Website an einem Ort zusammengefasst, um es uns allen leichter zu machen. Hier findest du Informationen zur Trauung, zum Fest, zur Unterkunft und zu praktischen Details sowie einige andere Dinge, die du möglicherweise wissen möchtest. <br>
+            Auf dieser Website könnt ihr unter anderem:
+
+          <ul class="OSAlinkValkomen">
+            <li><a href="#" data-target="OSA">Euch zur Hochzeit anmelden.</a></li>
+            <li><a href="#" data-target="Spex">Euch bei unseren Toastmastern anmelden, um bei der Feier eine Showeinlage zu geben oder eine Rede zu halten</a></li>
+            <li>Den Überblick behalten, was an welchem Ort während des Wochenendes passiert</li>
+          </ul> <br>
+          <b> Rückmeldung (O.S.A.) bis spätestens <u>23. Juni</u></b>, damit wir die bestmögliche Planung machen können!
+        </p>
+        `,
+
+      },
 
       {
         target: '#Boende',
