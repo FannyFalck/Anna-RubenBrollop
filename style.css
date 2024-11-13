@@ -259,13 +259,13 @@ ul#mynav {
 }
 
 /* ************  ******** ** Flagga  ****** ****** */
-.flaggSWE,
-.flaggGER {
+.flaggSWE, .flaggGER {
   width: 90px;
   /* Gör flaggorna mindre */
   height: auto;
   cursor: pointer;
   position: fixed;
+  z-index: 2500;
   top: 10px;
 }
 
@@ -375,31 +375,24 @@ ul#mynav {
     gap: 10px;
   }
 
+  /* ************  ******** ** Flagga  ****** ****** */
+  .flaggSWE, .flaggGER {
+    width: 50px;
+    /* Gör flaggorna mindre */
+    height: auto;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2500;
+    top: 6px;
+  }
+  .flaggSWE {
+    right: 65px;
+  }
+  .flaggGER {
+    right: 10px;
+  }
 
 }
-
-
-/* ************  ******** ****Flagga  ****** ****** */
-.flaggSWE,
-.flaggGER {
-  width: 50px;
-  /* storlek  på flaggan */
-  height: auto;
-  cursor: pointer;
-  position: fixed;
-  top: 4px;
-  z-index: 2500;
-}
-
-.flaggSWE {
-  right: 70px;
-}
-
-.flaggGER {
-  right: 10px;
-}
-
-
 
 @media (max-width: 700px) {
   .valkomstext {
