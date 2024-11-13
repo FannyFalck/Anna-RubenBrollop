@@ -84,9 +84,9 @@
 
 
       <div class="information">
-        <div id="valkommen" class="content-section" data-translate> </div>
+        <div id="valkommen" class="content-section"  data-translate> </div>
 
-        <div id="brollopshelg" class="content-section" style="display: none">
+        <div id="brollopshelg" class="content-section" style="display: none" data-translate >
           <h2>Bröllopshelg</h2>
           <p>
             Bröllopet kommer firas på Kungshaga Hotell, där det även finns rum att boka för er som vill bo där (se sidan
@@ -128,11 +128,9 @@
           </div>
         </div>
 
-        <div id="Boende" class="content-section" data-translate style="display: none">
+        <div id="Boende" class="content-section" style="display: none" data-translate> </div>
 
-        </div>
-
-        <div id="resvagar" class="content-section" style="display: none">
+        <div id="resvagar" class="content-section" style="display: none" data-translate>
           <h2>Resvägar</h2>
           <p>
             Adress till bröllopet: <b> <i> Kungshaga Hotell - <a
@@ -168,7 +166,7 @@
         </div>
 
 
-        <div id="onskelista" class="content-section" style="display: none">
+        <div id="onskelista" class="content-section" style="display: none" data-translate>
           <h2>Önskelista</h2>
           <p>
             Vår största önskan är att få dela denna stund med de som betyder mest för oss, därför är det vår enda
@@ -180,7 +178,7 @@
           </p>
         </div>
 
-        <div id="OSA" class="content-section" style="display: none;">
+        <div id="OSA" class="content-section" style="display: none;" data-translate>
           <h2>O.S.A</h2>
           <p>Här kan ni anmäla er till bröllopet...
             <br>
@@ -193,13 +191,13 @@
         </div>
 
 
-        <div id="Spex" class="content-section" style="display: none">
+        <div id="Spex" class="content-section" style="display: none" data-translate>
           <h2>Anmälan till Spex och tal </h2>
           <p>Här anäller di dig </p>
         </div>
 
 
-        <div id="brollopsfolje" class="content-section" style="display: none">
+        <div id="brollopsfolje" class="content-section" style="display: none" data-translate>
           <h2>Bröllopsfölje</h2>
           <p>
             samt några andra personer som kan vara bra att känna till inför
@@ -207,7 +205,7 @@
           </p>
         </div>
 
-        <div id="bordsplaceing" class="content-section" style="display: none">
+        <div id="bordsplaceing" class="content-section" style="display: none" data-translate>
           <h2>Bröllopsfölje</h2>
           <p>
             samt några andra personer som kan vara bra att känna till inför
@@ -216,9 +214,9 @@
         </div>
 
 
-        <div id="bildgalleri" class="content-section" style="display: none">
-          <h2>Bildgalleri</h2>
-          <p>Det här är våra bilder.</p>
+        <div id="bildgalleri" class="content-section" style="display: none" data-translate>
+          <div id="bildgalleri_rubrik" data-translate>
+        </div>
           <!-- Carusell 1  -->
           <div class="style-cauresell-bilder">
             <div id="carouselID1" class="carousel slide">
@@ -322,12 +320,20 @@
 
     <div class="HelaTimeCountDown">
       <hr>
-      <p class="TimerCountText">Bröllopsdag om</p>
+      <p class="TimerCountText" data-translate >Bröllopsdag om</p>
       <div id="TimeCountDown">
-        <div id="days"></div>
-        <div id="hours"></div>
-        <div id="minutes"></div>
-        <div id="seconds"></div>
+        <div>
+          <div id="days"></div> <span id="days_counter" data-translate ></span>
+        </div>
+        <div>
+          <div id="hours"></div> <span id="hours_counter" data-translate ></span>
+        </div>
+        <div>
+          <div id="minutes"></div> <span id="minutes_counter" data-translate></span>
+        </div>
+        <div> 
+          <div id="seconds"></div> <span id="seconds_counter" data-translate></span>
+        </div>
       </div>
     </div> <!--  HelaTimeCountDown -->
   </div> <!-- MainCenterBox -->
@@ -394,7 +400,7 @@
           </p>
           
           `,
-          
+
         ger:`
         <h2>Willkommen </h2>
         <p class="Välkommentext">
@@ -461,9 +467,52 @@
                 Entfernung zum Bahnhof Mora: 14,8 km <br> 
               </p>
             `
-      }
-    ]
+      }, 
+  
 
+
+      {
+        target: `#bildgalleri_rubrik`,
+        swe: `
+        <h2> Bildgalleri </h2>
+        <p> Det här är våra bilder. </p>
+        `,
+        ger: `
+        <h2> Bildergalerie </h2>
+        <p> Das sind unsere Bilder.</p>
+        `,
+      }, 
+
+      {
+        target: `#days_counter`,
+        swe: `DAGAR`,
+        ger: `TAGE`,
+      }, 
+      {
+        target: `#hours_counter`,
+        swe: `TIMMAR`,
+        ger: `STUNDEN`,
+      }, 
+
+      {
+        target: `#minutes_counter`,
+        swe: `MINUTER`,
+        ger: `MINUTEN`,
+      }, 
+
+      {
+        target: `#seconds_counter`,
+        swe: `SEKUNDER`,
+        ger: `SEKUNDEN`,
+      }, 
+
+
+
+
+    ] // Slutet at ARRAY från mySections
+
+
+    // Definerar vilka knappar som ändrar vilket språk. 
     const myButtons = [
       {
         target: '#SWEflagga',

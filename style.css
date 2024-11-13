@@ -153,15 +153,12 @@ ul#mynav li a {
   margin: 0 50px;
   text-align: center;
   font-family: "Bodoni Moda SC", serif;
+  font-size: 25px;
+  
 }
 
-#TimeCountDown div span {
-  /*siffrorna */
-  display: block;
-  font-size: 30px;
-  color: black;
-  margin-bottom: 3px;
-}
+
+
 
 /*  ******** **** Time Conter Down FÖR  linje OCH texten **** ****  */
 hr {
@@ -349,7 +346,7 @@ ul#mynav {
     margin: 5px;
   }
 
-  #TimeCountDown div span {
+  #TimeCountDown div {
     font-size: 20px;
     margin-bottom: 3px;
   }
@@ -471,5 +468,13 @@ ul#mynav {
   .style-cauresell-bilder {
     flex-direction: column;
     gap: 5px;
+  }
+
+  #TimeCountDown div {
+    margin: 10px;
+    text-align: center;
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 15px;
+    
   }
 }

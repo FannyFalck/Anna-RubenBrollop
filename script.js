@@ -49,14 +49,14 @@ function TimeCountDown() {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Visa resultatet i respektive element
-    document.getElementById("days").innerHTML = `<span>${days}</span> DAGAR`;
-    document.getElementById("hours").innerHTML = `<span>${hours}</span> TIMMAR`;
+    document.getElementById("days").innerHTML = `<span>${days}</span> `;
+    document.getElementById("hours").innerHTML = `<span>${hours}</span> `;
     document.getElementById(
       "minutes"
-    ).innerHTML = `<span>${minutes}</span> MINUTER`;
+    ).innerHTML = `<span>${minutes}</span> `;
     document.getElementById(
       "seconds"
-    ).innerHTML = `<span>${seconds}</span> SEKUNDER`;
+    ).innerHTML = `<span>${seconds}</span> `;
 
     // Om nedräkningen är klar, visa ett meddelande
     if (distance < 0) {
