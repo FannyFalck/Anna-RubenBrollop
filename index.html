@@ -320,7 +320,7 @@
 
     <div class="HelaTimeCountDown">
       <hr>
-      <p class="TimerCountText" data-translate >Bröllopsdag om</p>
+      <p id="TimerCountText_id" class="TimerCountText" data-translate></p>
       <div id="TimeCountDown">
         <div>
           <div id="days"></div> <span id="days_counter" data-translate ></span>
@@ -343,39 +343,21 @@
   <script src="script.js"></script>
   <script>
     const mySections = [
-      // ********* Navigationbar
-      {
-        target: '#menu-valkommen', swe: `Välkommen`, ger: `Wilkommen`
-      },
-      {
-        target: '#menu-brollopshelg', swe: `Bröllopshelgen`, ger: `Das Wochenende der Hochzeit`
-      },
-      {
-        target: '#menu-boende', swe: `Boende`, ger: `Unterkunft`
-      },
-      {
-        target: '#menu-resvagar', swe: `Resvägar`, ger: `Reisewege`
-      },
-      {
-        target: '#menu-onskelista', swe: `Önskelista`, ger: `Wunschliste`
-      },
-      {
-        target: '#menu-osa', swe: `O.S.A`, ger: `U.A.w.g`
-      },
-      {
-        target: '#menu-spex', swe: `Anmälan till spex och tal`, ger: `Anmeldung für Unterhaltung und Rede`
-      },
-      {
-       target: '#menu-brollopsfolje', swe: `Bröllopsfölje`, ger: `Hochzeitsgefolge`
-      },
-      {
-        target: '#menu-bordplacering', swe: `Bordplacering`, ger: `Tischplatzierung`
-      },
-      {
-        target: '#menu-bildgalleri', swe: `Bildgalleri`, ger: `Bildergalerie`
-      },
-      // ************* *************** VÄLKOMMEN **************** *******************
+      //********************************************************************************************** 
+      // ********* ********* Navigationbar ********* *********
+      { target: '#menu-valkommen', swe: `Välkommen`, ger: `Wilkommen` },
+      { target: '#menu-brollopshelg', swe: `Bröllopshelgen`, ger: `Das Wochenende der Hochzeit` },
+      { target: '#menu-boende', swe: `Boende`, ger: `Unterkunft` },
+      { target: '#menu-resvagar', swe: `Resvägar`, ger: `Reisewege`},
+      { target: '#menu-onskelista', swe: `Önskelista`, ger: `Wunschliste` },
+      { target: '#menu-osa', swe: `O.S.A`, ger: `U.A.w.g` },
+      { target: '#menu-spex', swe: `Anmälan till spex och tal`, ger: `Anmeldung für Unterhaltung und Rede` },
+      { target: '#menu-brollopsfolje', swe: `Bröllopsfölje`, ger: `Hochzeitsgefolge` },
+      { target: '#menu-bordplacering', swe: `Bordplacering`, ger: `Tischplatzierung` },
+      { target: '#menu-bildgalleri', swe: `Bildgalleri`, ger: `Bildergalerie` },
 
+      //********************************************************************************************** 
+      // ************* *************** VÄLKOMMEN **************** *******************
       { target:`#valkommen`,
         swe: `
         <h2>Välkommen </h2>
@@ -396,7 +378,10 @@
               <li> Hålla koll på vad som händer på vilken plats under helgen </li>
             </ul> <br>
 
-            <b> O.S.A senast den <u>23 juni</u></b>, så att vi kan göra bästa möjliga planering!
+            <b> O.S.A senast den <u>23 juni</u></b>, så att vi kan göra bästa möjliga planering! <br> <br>
+
+            Kramar, <br>
+            Anna & Ruben 
           </p>
           
           `,
@@ -404,23 +389,34 @@
         ger:`
         <h2>Willkommen </h2>
         <p class="Välkommentext">
-         Wir werden heiraten und möchten diesen besonderen Tag mit unseren Liebsten feiern! <br><br> 
-            Die Hochzeit und das Fest finden am 23. August 2025 im Kungshaga Hotell in Orsa statt. <br><br> 
-            Du hast unsere Einladung mit dem QR-Code oder den Link zu dieser Website erhalten, weil du einer der Menschen bist, die auf die eine oder andere Weise die Besten in unserem Leben sind. Wir wünschen uns sehr, dass du zu unserer Hochzeit kommst und diesen Tag mit uns teilst! <br> 
-            Wir haben alle Informationen hier auf der Website an einem Ort zusammengefasst, um es uns allen leichter zu machen. Hier findest du Informationen zur Trauung, zum Fest, zur Unterkunft und zu praktischen Details sowie einige andere Dinge, die du möglicherweise wissen möchtest. <br>
-            Auf dieser Website könnt ihr unter anderem:
+          Wir werden heiraten und möchten diesen besonderen Tag mit unseren Liebsten feiern!<br><br> 
+          Hochzeit und Feier am 23. August 2025 im Kungshaga Hotell in Orsa. <br><br>
+          
+          Wenn du diese Einladung mit dem QR-Code oder dem Link zu dieser Webseite erhalten hast, 
+          gehörst du zu den Menschen, die uns auf ganz besondere Weise ans Herz gewachsen sind. 
+          Wir möchten dich sehr gern bei unserer Hochzeit dabeihaben, um diesen Tag mit uns zu teilen!
+
+          Wir haben alle Informationen hier auf der Webseite zusammengestellt, um alles für uns alle einfacher zu machen. 
+          Hier findest du Infos zur Trauung, Feier, Unterkunft und praktische Details sowie einiges mehr, 
+          das dich interessieren könnte. <br>
+          Auf dieser Webseite kannst du unter anderem:
 
           <ul class="OSAlinkValkomen">
-            <li><a href="#" data-target="OSA">Euch zur Hochzeit anmelden.</a></li>
-            <li><a href="#" data-target="Spex">Euch bei unseren Toastmastern anmelden, um bei der Feier eine Showeinlage zu geben oder eine Rede zu halten</a></li>
-            <li>Den Überblick behalten, was an welchem Ort während des Wochenendes passiert</li>
+            <li><a href="#" data-target="OSA">Dich zur Hochzeit anmelden.</a></li>
+            <li><a href="#" data-target="Spex">Dich bei unseren Toastmastern anmelden, wenn du während des Abendessens eine Einlage oder eine Rede halten möchtest.</a></li>
+            <li> Den Überblick behalten, was wann und wo am Wochenende stattfindet. </li>
           </ul> <br>
-          <b> Rückmeldung (O.S.A.) bis spätestens <u>23. Juni</u></b>, damit wir die bestmögliche Planung machen können!
+          <b> Um Rückmeldung wird bis spätestens <u> 23. Juni gebeten </u></b>, damit wir bestmöglich planen können! <br> <br>
+
+          Liebe Grüße, <br>
+          Anna & Ruben
         </p>
+        
         `,
 
       },
-
+      //******************************************************************** 
+      //************* *************** Boende *************** *************** 
       {
         target: '#Boende',
         swe: `
@@ -470,7 +466,7 @@
       }, 
   
 
-
+      //************* *************** Bildgalleri ***************
       {
         target: `#bildgalleri_rubrik`,
         swe: `
@@ -483,33 +479,18 @@
         `,
       }, 
 
-      {
-        target: `#days_counter`,
-        swe: `DAGAR`,
-        ger: `TAGE`,
-      }, 
-      {
-        target: `#hours_counter`,
-        swe: `TIMMAR`,
-        ger: `STUNDEN`,
-      }, 
-
-      {
-        target: `#minutes_counter`,
-        swe: `MINUTER`,
-        ger: `MINUTEN`,
-      }, 
-
-      {
-        target: `#seconds_counter`,
-        swe: `SEKUNDER`,
-        ger: `SEKUNDEN`,
-      }, 
+      //  ************* *************** TimeCounter ************* ***************
+      { target: `#TimerCountText_id`, swe: `Bröllopsdag om`, ger: `Hochzeitstag ungefähr`, },
+      { target: `#days_counter`, swe: `DAGAR`, ger: `TAGE`, }, 
+      { target: `#hours_counter`, swe: `TIMMAR`, ger: `STUNDEN`, }, 
+      { target: `#minutes_counter`, swe: `MINUTER`, ger: `MINUTEN`, }, 
+      { target: `#seconds_counter`, swe: `SEKUNDER`, ger: `SEKUNDEN`, },
 
 
 
 
-    ] // Slutet at ARRAY från mySections
+
+    ] // Slutet av mySections
 
 
     // Definerar vilka knappar som ändrar vilket språk. 
