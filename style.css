@@ -7,15 +7,16 @@ body {
   background-position: center;
 }
 
-header #menuToggle{
-  position: fixed;  
+header #menuToggle {
+  position: fixed;
 }
 
 .framsidabildContainer {
   display: flex;
   justify-content: center;
-  padding: 30px 30px 10px 30px; 
+  padding: 30px 30px 10px 30px;
 }
+
 .framsidabild {
   width: 100%;
   height: auto;
@@ -28,65 +29,71 @@ header #menuToggle{
 
 @media (max-width: 900px) {
   .framsidabildContainer {
-    padding: 30px 10px 10px 10px; 
+    padding: 30px 10px 10px 10px;
   }
+
   .framsidabild.desktop {
-    display: none; 
+    display: none;
   }
+
   .framsidabild.mobile {
-    display: block; 
+    display: block;
   }
 }
 
 .valkomstext {
-  position: absolute; 
-  top: 80px; 
+  position: absolute;
+  top: 80px;
   text-align: center;
-  color: white; 
-  font-size: 70px; 
+  color: white;
+  font-size: 70px;
   font-family: "Tangerine", cursive;
   padding: 10px;
   /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 
 h2 {
-  font-family: "Cinzel Decorative", serif; /*här är fonten för alla rubrikerna  */
+  font-family: "Cinzel Decorative", serif;
+  /*här är fonten för alla rubrikerna  */
 }
- 
+
 /* **** **** **** Navigationbar hover mus  ******** **** */
 ul#mynav {
-  list-style-type: none; 
-  padding-left: 40px; 
-  margin: 0; 
+  list-style-type: none;
+  padding-left: 40px;
+  margin: 0;
   /* font-family: "Bodoni Moda SC", serif; */
 }
 
 ul#mynav li {
-  margin-bottom: 10px; /* Lägger till ett mellanrum mellan varje länk */
+  margin-bottom: 10px;
+  /* Lägger till ett mellanrum mellan varje länk */
 }
 
 ul#mynav li a {
   text-decoration: none;
   opacity: 80%;
   color: white;
-  display: block; 
-  padding: 15px; 
+  display: block;
+  padding: 15px;
   font-size: 40px;
   font-family: "Cinzel Decorative", serif;
-  cursor: pointer; 
-  transition: font-size 0.2s ease, transform 0.2s ease; 
+  cursor: pointer;
+  transition: font-size 0.2s ease, transform 0.2s ease;
 }
 
 ul#mynav li a:hover {
-  font-size: 22px; 
+  font-size: 22px;
   transform: scale(1.05);
 }
 
 /*  ******** *************** ****************** *************************************** ************ */
 /*  ******** **** **** FLEX BOX CENTER FÖR ALLA TRE , navigationbar, information  och timercontdown ************ */
 .MainCenterBox {
-  display: flex; /* Gör MainCenterBox till en flex container */
-  flex-direction: column; /* Lägg till detta för att stapla elementen vertikalt */
+  display: flex;
+  /* Gör MainCenterBox till en flex container */
+  flex-direction: column;
+  /* Lägg till detta för att stapla elementen vertikalt */
   border-radius: 3px;
   background-color: #DDF7D1;
   padding: 15px 0px 40px 0px;
@@ -95,11 +102,11 @@ ul#mynav li a:hover {
 }
 
 #navigationbar {
-  width: 200px; 
+  width: 200px;
 }
 
 .information {
-  flex: 1; 
+  flex: 1;
   padding: 20px;
   background-color: #F4FBF2;
   margin: 20px 50px 10px 70px;
@@ -112,27 +119,29 @@ ul#mynav li a:hover {
 
 ul#mynav li a {
   text-decoration: none;
-  color: black; 
+  color: black;
   font-size: 18px;
-  padding: 10px 20px; 
-  display: block; 
+  padding: 10px 20px;
+  display: block;
 }
 
 .content-section {
-  display: none; 
+  display: none;
 }
 
 .content-section:first-child {
-  display: block; 
+  display: block;
 }
 
 .MainContent {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   gap: 20px;
 }
+
 /*  ************ ****Time Conter Down  **** *********/
-#TimeCountDown { /*timmar, minuter */
+#TimeCountDown {
+  /*timmar, minuter */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +155,8 @@ ul#mynav li a {
   font-family: "Bodoni Moda SC", serif;
 }
 
-#TimeCountDown div span { /*siffrorna */
+#TimeCountDown div span {
+  /*siffrorna */
   display: block;
   font-size: 30px;
   color: black;
@@ -167,9 +177,9 @@ hr {
 
 .HelaTimeCountDown {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  text-align: center; 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   margin-top: 40px;
 }
 
@@ -177,16 +187,18 @@ hr {
   text-align: left;
   margin-left: 10px;
   color: white;
-  
+
 }
 
 /* ********* ********** ******** carousel ************** **************/
-.carousel-item > img {
+.carousel-item>img {
   max-width: 100%;
 }
+
 .carousel {
   width: 200px;
 }
+
 .style-cauresell-bilder {
   display: flex;
   gap: 10px;
@@ -195,15 +207,15 @@ hr {
 
 
 /*  ********* ********** ******** Links in brödtext or klickbara  ********* ********** ******** */
-.OSAlinkValkomen a{
-  text-decoration: none; 
+.OSAlinkValkomen a {
+  text-decoration: none;
   color: black;
   cursor: pointer;
 }
 
 .OSAlinkValkomen a:hover {
-  text-decoration: underline; 
-} 
+  text-decoration: underline;
+}
 
 
 
@@ -211,7 +223,7 @@ hr {
 #navigationbar {
   position: relative;
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
 }
 
 #menuToggle {
@@ -226,39 +238,44 @@ hr {
 ul#mynav {
   list-style: none;
   padding-left: 10px;
-  display: block; 
-  gap: 20px; 
+  display: block;
+  gap: 20px;
 }
 
 /* ******** Ramrunt festschema ******** */
 .ramrunt {
-  border: 2px solid #cccccc; 
-  padding: 20px; 
+  border: 2px solid #cccccc;
+  padding: 20px;
   margin: 20px 0;
-  border-radius: 10px; 
-  background-color: #f9f9f9; 
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
 }
 
 .festhelglinjer {
-  height: 2px;  
-  background-color:gray; 
-  width: 60%;        
-  display: block;  
-  margin: 15px auto;   
-  border: none;        
+  height: 2px;
+  background-color: gray;
+  width: 60%;
+  display: block;
+  margin: 15px auto;
+  border: none;
 }
-/* ************  ******** ** Flagga  ****** ****** */ 
-.flaggSWE, .flaggGER {
-  width: 90px; /* Gör flaggorna mindre */
+
+/* ************  ******** ** Flagga  ****** ****** */
+.flaggSWE,
+.flaggGER {
+  width: 90px;
+  /* Gör flaggorna mindre */
   height: auto;
   cursor: pointer;
-  position: fixed; 
-  top: 10px; 
+  position: fixed;
+  top: 10px;
 }
+
 .flaggSWE {
   right: 110px;
 }
+
 .flaggGER {
   right: 10px;
 }
@@ -270,10 +287,10 @@ ul#mynav {
 
 @media (max-width: 900px) {
   #menuToggle {
-    display: block; 
-    position: fixed; 
-    z-index: 2000; 
-    background-color: #DDF7D1;  
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    background-color: #DDF7D1;
     width: 100%;
     text-align: left;
     color: black;
@@ -282,12 +299,12 @@ ul#mynav {
   ul#mynav {
     max-height: 0;
     transition: max-height 0.5s ease-in-out;
-    flex-direction: column; 
+    flex-direction: column;
     width: 100%;
-    position: fixed; 
-    top: 35px; 
+    position: fixed;
+    top: 35px;
     left: 0;
-    background-color: #DDF7D1;   
+    background-color: #DDF7D1;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 2;
     overflow: hidden;
@@ -299,13 +316,15 @@ ul#mynav {
     overflow-y: auto;
   }
 
-  body { /* Bakgrundbild skogen  */
-    background-size: cover; 
+  body {
+    /* Bakgrundbild skogen  */
+    background-size: cover;
     background-position: center;
   }
 
-  .MainCenterBox { /* Bakgrund för MainCenterBox */
-    margin: 4px; 
+  .MainCenterBox {
+    /* Bakgrund för MainCenterBox */
+    margin: 4px;
     border-radius: 0;
   }
 
@@ -346,9 +365,9 @@ ul#mynav {
 
   /*  ************ **** Välkomstext   **** *********/
   .valkomstext {
-    top: 60px; 
-    left: 80px; 
-    color: white; 
+    top: 60px;
+    left: 80px;
+    color: white;
     text-align: center;
     font-size: 60px;
   }
@@ -363,31 +382,36 @@ ul#mynav {
 }
 
 
-  /* ************  ******** ****Flagga  ****** ****** */
-  .flaggSWE, .flaggGER {
-    width: 50px; /* storlek  på flaggan */
-    height: auto;
-    cursor: pointer;
-    position: fixed; 
-    top: 4px; 
-    z-index: 2500; 
-  }
+/* ************  ******** ****Flagga  ****** ****** */
+.flaggSWE,
+.flaggGER {
+  width: 50px;
+  /* storlek  på flaggan */
+  height: auto;
+  cursor: pointer;
+  position: fixed;
+  top: 4px;
+  z-index: 2500;
+}
 
-  .flaggSWE {
-    right: 70px; 
-  }
+.flaggSWE {
+  right: 70px;
+}
 
-  .flaggGER {
-    right: 10px; 
-  }
+.flaggGER {
+  right: 10px;
+}
 
 
 
 @media (max-width: 700px) {
- .valkomstext {
-    top: 60px; /* Placera den från toppen av fönstret */
-    left: 130px; /* Placera den från vänster av fönstret */
-    font-size: 40px; /* Anpassa storleken */
+  .valkomstext {
+    top: 60px;
+    /* Placera den från toppen av fönstret */
+    left: 130px;
+    /* Placera den från vänster av fönstret */
+    font-size: 40px;
+    /* Anpassa storleken */
     color: white;
     text-align: center;
   }
@@ -395,29 +419,38 @@ ul#mynav {
 
 @media (max-width: 600px) {
   .valkomstext {
-     top: 60px; /* Placera den från toppen av fönstret */
-     left: 80px; /* Placera den från vänster av fönstret */
-     font-size: 40px; /* Anpassa storleken */
-     color: white;
-     text-align: center;
-   }
- }
+    top: 60px;
+    /* Placera den från toppen av fönstret */
+    left: 80px;
+    /* Placera den från vänster av fönstret */
+    font-size: 40px;
+    /* Anpassa storleken */
+    color: white;
+    text-align: center;
+  }
+}
 
- @media (max-width: 540px) {
+@media (max-width: 540px) {
   .valkomstext {
-     top: 60px; /* Placera den från toppen av fönstret */
-     left: 50px; /* Placera den från vänster av fönstret */
-     font-size: 38px; /* Anpassa storleken */
-     color: white;
-     text-align: center;
-   }
- }
+    top: 60px;
+    /* Placera den från toppen av fönstret */
+    left: 50px;
+    /* Placera den från vänster av fönstret */
+    font-size: 38px;
+    /* Anpassa storleken */
+    color: white;
+    text-align: center;
+  }
+}
 
 @media (max-width: 430px) {
   .valkomstext {
-    top: 55px; /* Justera efter behov */
-    left: 45px; /* Justera efter behov */
-    font-size: 30px; /* Mindre textstorlek */
+    top: 55px;
+    /* Justera efter behov */
+    left: 45px;
+    /* Justera efter behov */
+    font-size: 30px;
+    /* Mindre textstorlek */
     text-align: center;
     color: white;
   }
@@ -425,7 +458,7 @@ ul#mynav {
 
 /* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
 /* ******** ******** ********  NAVIGERINGMENY @media query 375 ******** ******** ******** ********   */
-/* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */  
+/* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
 @media (max-width: 375px) {
   .valkomstext {
     top: 60px;
@@ -435,9 +468,8 @@ ul#mynav {
     color: white;
   }
 
-.style-cauresell-bilder {
-  flex-direction: column;
-  gap: 5px;
+  .style-cauresell-bilder {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
-} 
-
