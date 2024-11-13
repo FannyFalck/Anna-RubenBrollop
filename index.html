@@ -1,328 +1,421 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" ></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caramel&family=Great+Vibes&family=Imperial+Script&family=Pinyon+Script&family=Satisfy&display=swap" rel="stylesheet"/>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caramel&family=Imperial+Script&family=Pinyon+Script&display=swap");
-    </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- Meny och rubrik  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caramel&family=Great+Vibes&family=Imperial+Script&family=Pinyon+Script&family=Satisfy&display=swap"
+    rel="stylesheet" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caramel&family=Imperial+Script&family=Pinyon+Script&display=swap");
+  </style>
 
-
-    <!-- Välkomstext  Anna & Ruben-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- informationsbrödtext -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
-
-    <title>Bröllop</title>
-  </head>
-
-  <body>
-    <header>
-      <img class="flaggSWE" src="imagesFlagg/flaggSWE.png" alt="Svenska flaggan" />
-      <img class="flaggGER" src="imagesFlagg/flaggGER.png" alt="Tyska flaggan" />
-      <button id="menuToggle"> <i class="fa-solid fa-bars"></i> &nbsp; Meny</button>
-
-      <div class="framsidabildContainer">
-        <p class="valkomstext"> <b> Bröllop - Hochzeit  2025 <br> Anna & Ruben </b> </p>
-      </div>
-
-      <div class="framsidabildContainer">
-        <img class="framsidabild desktop" src="images/bakgrundbrygga2_.webp" alt="Anna och Ruben vid bryggan" />
-        <img class="framsidabild mobile" src="images/bakgrundbrygga2__zoom.webp" alt="Anna och Ruben vid bryggan" />
-      </div>
-    
-
-    </header>
-
-    <div class="MainCenterBox">
-      <div class="MainContent">
-        <nav id="navigationbar">
-          <ul id="mynav">
-            <li><a href="#" data-target="valkommen">Välkommen <br> Wilkommen<br></a></li>
-            <li><a href="#" data-target="brollopshelg">Bröllopshelgen <br> Das Wochenende der Hochzeit</a></li>
-            <li><a href="#" data-target="Boende">Boende <br> Unterkunft</a></li>
-            <li><a href="#" data-target="resvagar">Resvägar <br> Reisewege </a></li>
-            <li><a href="#" data-target="onskelista">Önskelista <br> Wunschliste </a></li>
-            <li><a href="#" data-target="OSA">O.S.A <br> U.A.w.g </a></li>
-            <li><a href="#" data-target="Spex">Anmälan till spex och tal <br> Anmeldung für Unterhaltung und Rede</a></li>
-            <li><a href="#" data-target="brollopsfolje">Bröllopsfölje <br> Hochzeitsgefolge </a></li>
-            <li><a href="#" data-target="Bordplacering">Bordplacering <br> Tischplatzierung </a></li>
-            <li><a href="#" data-target="bildgalleri">Bildgalleri <br> Bildergalerie</a></li>
-            
-          </ul>
-        </nav>
-        
-
-        <div class="information">
-          <div id="valkommen" class="content-section">
-            <h2>Välkommen </h2>
-            <p class="Välkommentext">  
-              Vi ska gifta oss, och vi vill fira det med våra nära och kära! <br> <br>
-              Bröllop och fest 23 augusti 2025, på Kungshaga Hotell i Orsa. <br> <br>
-              Du som fått vår inbjudan med QR-koden eller länken till denna hemsida är en av de personer som, på ett eller annat vis, är de bästa i våra liv. Vi vill så gärna att du ska komma till vårt bröllop och dela den dagen med oss! <br> 
-              Vi har samlat all information här på hemsidan, på ett och samma ställe för att underlätta för oss alla. Här finner du information om vigsel, fest, boende och praktiska detaljer och lite annat som ni kan tänkas vilja veta. <br>
-              
-              På denna hemsida kan ni bland annat:
-              <ul class="OSAlinkValkomen">
-                <li><a href="#" data-target="OSA">Anmäla er till bröllopet.</a></li>
-                <li><a href="#" data-target="Spex">Anmäla er till våra toastmasters för att spexa eller hålla tal under middagen </a></li>
-                <li> Hålla koll på vad som händer på vilken plats under helgen </li>
-              </ul>  <br>
-          
-              <b> O.S.A senast den <u>23 juni</u></b>, så att vi kan göra bästa möjliga planering!
-            </p>
-          </div>
-
-          <div id="brollopshelg" class="content-section" style="display: none">
-            <h2>Bröllopshelg</h2>
-            <p> 
-              Bröllopet kommer firas på Kungshaga Hotell, där det även finns rum att boka för er som vill bo där (se sidan ”Boende” för mer information och länk till bokning). <br> <br>
-              Vigseln kommer ske i <b>Orsa kyrka</b>, 4,4 km från Kungshaga. <br><br><br>
-            
-             <b style="font-size: 20px; text-align: center; display: block;">Festschema</b>
-             <div class="ramrunt"> 
-                <b style="font-size: 18px; text-align: center; display: block; ">FREDAG</b>  <br> <br> 
-                <b>Kl 17:00 - Danslektion med Anna </b> <br>
-                Icebreaker! Vi bryter isen och värmer upp inför morgondagen med en nybörjarlektion i bachata. Vad är bachata?! Tänker ni nu. Bachata är dansen som Anna och Ruben kommer dansa som första dans. 
-                Bachata är en pardans med latinamerikanskt ursprung som Anna och Ruben dansat tillsammans sedan första dagen. Ja, det var faktiskt vad Anna och Ruben gjorde på sin första dejt. 
-                Till skillnad från Anna och Ruben som lärde sig via Youtube tutorial så får ni lära er grundstegen live med Anna! Efter Anna och Rubens första dans kommer nämligen ni alla bli uppbjudna att dansa bachata, 
-                och vi ser fram emot det! Och var inte rädda - ni förväntas dansa lika illa som Ruben hans första gång. Fulast dans vinner! <br><br>
-                I samband med danslektionen så bjuds det på snacks och importerat vin från Tyskland och Jämtland, brygd på lokala gårdar. <br> <br> 
-                <hr class="festhelglinjer">
-                <b> Kl 19:30 - Middag på Kungshaga Hotell </b> <br> 
-                Vi återhämtar oss efter danslektionen och laddar upp inför morgondagen med en buffé i dalasmaker. <br><br>
-                <hr class="festhelglinjer"> 
-              </div>
-              <div class="ramrunt"> 
-                <b style="font-size: 18px; text-align: center; display: block;">LÖRDAG</b>  <br>    <br>   
-                <b> Kl 14:00 Vigsel i Orsa kyrka </b> <br>
-                Efter vigseln bjuds det på snittar (vegetariskt eller lax?) och vi skålar för det nyblivna brudparet Hohmann! <br> 
-                <hr class="festhelglinjer">
-                <b>Kl 17:00 Middag och fest på Kungshaga </b> <br>
-                Efter lite mingel, medan vi fotograferas, blir det middag och fest på Kungshaga. Det kommer förstås att finnas alternativ för dem som har allergier eller matpreferenser, anges i O.S.A. <br> <br>
-                Efter middagen blir det dans och skratt! <br> 
-                Obs. Ta med bekvämaste skor för dans! Passa på att önska din favoritlåt vid O.S.A.
-                </p>
-                <hr class="festhelglinjer">
-              </div>
-          </div>
-
-          <div id="Boende" class="content-section" data-translate style="display: none">
-            
-          </div>
-
-          <div id="resvagar" class="content-section" style="display: none">
-            <h2>Resvägar</h2>
-            <p> 
-              Adress till bröllopet: <b> <i> Kungshaga Hotell - <a href="https://www.google.com/maps/search/?api=1&query=LINDÄNGSVÄGEN+11,+794+92+Orsa" target="_blank"> LINDÄNGSVÄGEN 11, 794 92 Orsa </a> </b></i> <br> 
-
-              <iframe  class="responsive-map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7877.264471110389!2d14.623222047379715!3d61.09050024721267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLIND%C3%84NGSV%C3%84GEN%2011%2C%20794%2092%20Orsa!5e0!3m2!1ssv!2sse!4v1729246809203!5m2!1ssv!2sse" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   <br><br>  
-
-              Från Göteborg, Norrköping eller Stockholm till bröllopet är enklast att resa med tåg (om ni inte tar bilen). <br><br>
-
-              <b style="font-size: 18px;">Tåg: </b>  <br>
-              Tågbiljetter kan ni finna på <a href="https://www.sj.se/" target="_blank" > SJ.se.</a> Ändhållplatsen är ”Mora Station”. <br>
-              Mora Station ligger 12,1 km från Kungshaga hotell, och dit kan ni ta er med Buss 141 eller med Taxi. <br> <br> 
+  <!-- Meny och rubrik  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+    rel="stylesheet">
 
 
-              <b style="font-size: 18px;">Buss 141: </b>  <br> 
-              Från Mora station till Kungshaga (stationen heter Kungshaga och ligger några hundra meter från hotellet). Bussarna går 1 till 2 gånger i timmen. För tidtabell och biljetter, klicka dig in på <a href="https://www.dalatrafik.se/linje/141" target="_blank"> Dalatrafik.se</a> <br>  <br>  
-              Till och från Orsa kyrka går även buss 141. Från busstationen är gångavståndet 500 meter. <br> <br>
+  <!-- Välkomstext  Anna & Ruben-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&family=Tangerine:wght@400;700&display=swap"
+    rel="stylesheet">
 
-              <b style="font-size: 18px;">Taxi: </b>  <br> 
-              Monalis Taxi Orsa tel: <a href="tel:0250-410 00">0250-410 00 </a> 
+  <!-- informationsbrödtext -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 
-            </p>
-            
-          </div>
+  <title>Bröllop</title>
+</head>
 
+<body>
+  <header>
+    <img id="SWEflagga" class="flaggSWE" src="imagesFlagg/flaggSWE.png" alt="Svenska flaggan" />
+    <img id="GERflagga" class="flaggGER" src="imagesFlagg/flaggGER.png" alt="Tyska flaggan" />
+    <button id="menuToggle"> <i class="fa-solid fa-bars"></i> &nbsp; Meny</button>
 
-          <div id="onskelista" class="content-section" style="display: none">
-            <h2>Önskelista</h2>
-            <p>
-              Vår största önskan är att få dela denna stund med de som betyder mest för oss, därför är det vår enda önskan. 
-              Eftersom ni själva får stå för resa och övernattning så ber vi er att inte investera mer än så på oss. <br><br> 
-              Er närvaro är vår finaste present!
+    <div class="framsidabildContainer">
+      <p class="valkomstext"> <b> Bröllop - Hochzeit 2025 <br> Anna & Ruben </b> </p>
+    </div>
 
-            </p>
-          </div>
-
-          <div id="OSA" class="content-section" style="display: none;">
-            <h2>O.S.A</h2>
-            <p>Här kan ni anmäla er till bröllopet...
-              <br>
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdclX38os6soyShTqulw03bRbWEoxORL7M4gAOQBsibeXtNRw/viewform?embedded=true" width="640" height="1431" frameborder="0" marginheight="0" marginwidth="0">Läser in …</iframe> 
-              <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSdclX38os6soyShTqulw03bRbWEoxORL7M4gAOQBsibeXtNRw/viewform?usp=sf_link"> klicka hör</a> </a></a> -->
-            </p>
-
-          </div>
-                 
-      
-          <div id="Spex" class="content-section" style="display: none">
-            <h2>Anmälan till Spex och tal </h2>
-            <p>Här anäller di dig </p>
-          </div>
+    <div class="framsidabildContainer">
+      <img class="framsidabild desktop" src="images/bakgrundbrygga2_.webp" alt="Anna och Ruben vid bryggan" />
+      <img class="framsidabild mobile" src="images/bakgrundbrygga2__zoom.webp" alt="Anna och Ruben vid bryggan" />
+    </div>
 
 
-          <div id="brollopsfolje" class="content-section" style="display: none">
-            <h2>Bröllopsfölje</h2>
-            <p>
-              samt några andra personer som kan vara bra att känna till inför
-              vårt bröllop. .
-            </p>
-          </div>
+  </header>
 
-          <div id="bordsplaceing" class="content-section" style="display: none">
-            <h2>Bröllopsfölje</h2>
-            <p>
-              samt några andra personer som kan vara bra att känna till inför
-              vårt bröllop. .
-            </p>
-          </div>
+  <div class="MainCenterBox">
+    <div class="MainContent">
+      <nav id="navigationbar">
+        <ul id="mynav">
+          <li><a id="menu-valkommen" href="#" data-target="valkommen" data-translate></a></li>
+          <li><a id="menu-brollopshelg" href="#" data-target="brollopshelg" data-translate></a></li>
+          <li><a id="menu-boende" href="#" data-target="Boende" data-translate></a></li>
+          <li><a id="menu-resvagar" href="#" data-target="resvagar" data-translate> </a></li>
+          <li><a id="menu-onskelista" href="#" data-target="onskelista" data-translate> </a></li>
+          <li><a id="menu-osa" href="#" data-target="OSA" data-translate> </a></li>
+          <li><a id="menu-spex" href="#" data-target="Spex" data-translate></a></li>
+          <li><a id="menu-brollopsfolje" href="#" data-target="brollopsfolje" data-translate></a></li>
+          <li><a id="menu-bordplacering" href="#" data-target="Bordplacering" data-translate></a></li>
+          <li><a id="menu-bildgalleri" href="#" data-target="bildgalleri" data-translate></a></li>
 
 
-          <div id="bildgalleri" class="content-section" style="display: none">
-            <h2>Bildgalleri</h2>
-            <p>Det här är våra bilder.</p>
-            <!-- Carusell 1  -->
-            <div class="style-cauresell-bilder">
-              <div id="carouselID1" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active bild-caorusel">
-                    <img src="images/bild1.jpeg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild2.jpeg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild3.jpeg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild4.jpg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild5.jpg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild7.jpeg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild8.jpeg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild9.JPG" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild10.jpg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild11.jpg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild12.jpg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild13.JPG" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild14.JPG" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild16.jpeg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild17.jpeg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild18.jpeg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild19.jpeg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild20.jpg" class="d-block" alt="..." />
-                  </div>
-                </div>
+        </ul>
+      </nav>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselID1" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
 
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselID1" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div> <!--  slut på  carouselID1 -->
+      <div class="information">
+        <div id="valkommen" class="content-section">
+          <h2>Välkommen </h2>
+          <p class="Välkommentext">
+            Vi ska gifta oss, och vi vill fira det med våra nära och kära! <br> <br>
+            Bröllop och fest 23 augusti 2025, på Kungshaga Hotell i Orsa. <br> <br>
+            Du som fått vår inbjudan med QR-koden eller länken till denna hemsida är en av de personer som, på ett eller
+            annat vis, är de bästa i våra liv. Vi vill så gärna att du ska komma till vårt bröllop och dela den dagen
+            med oss! <br>
+            Vi har samlat all information här på hemsidan, på ett och samma ställe för att underlätta för oss alla. Här
+            finner du information om vigsel, fest, boende och praktiska detaljer och lite annat som ni kan tänkas vilja
+            veta. <br>
 
-              <!-- Carusell 2  -->
-              <!-- <div id="bildgalleri2" class="content-section" style="display: none"></div> TOG BORT DENNA  -->
-              <div id="carouselID2" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active bild-caorusel">
-                    <img src="images/bild11.jpg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild11.jpg" class="d-block" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/bild11.jpg" class="d-block" alt="..." />
-                  </div>
-                </div>
+            På denna hemsida kan ni bland annat:
+          <ul class="OSAlinkValkomen">
+            <li><a href="#" data-target="OSA">Anmäla er till bröllopet.</a></li>
+            <li><a href="#" data-target="Spex">Anmäla er till våra toastmasters för att spexa eller hålla tal under
+                middagen </a></li>
+            <li> Hålla koll på vad som händer på vilken plats under helgen </li>
+          </ul> <br>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselID2" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselID2" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div> <!-- CarouselID2 --> 
-            </div> <!-- style-cauresell-bilder  -->
-          </div>  <!-- bildgalleri  -->
-        </div> <!-- information --> 
-      </div> <!-- Maincontent --> 
-  
-      <div class="HelaTimeCountDown">
-        <hr>
-        <p class="TimerCountText">Bröllopsdag om</p>
-        <div id="TimeCountDown">
-          <div id="days"></div>
-          <div id="hours"></div>
-          <div id="minutes"></div>
-          <div id="seconds"></div>
+          <b> O.S.A senast den <u>23 juni</u></b>, så att vi kan göra bästa möjliga planering!
+          </p>
         </div>
-      </div> <!--  HelaTimeCountDown -->
-    </div>  <!-- MainCenterBox --> 
-    
-    <p class="fannyCopyright">Skapad av: Fanny Falck</p>
-    
-    <script src="script.js"></script>
-    <script>
-      const mySections = [
-          {
-            target: '#Boende',
-            swe: `
+
+        <div id="brollopshelg" class="content-section" style="display: none">
+          <h2>Bröllopshelg</h2>
+          <p>
+            Bröllopet kommer firas på Kungshaga Hotell, där det även finns rum att boka för er som vill bo där (se sidan
+            ”Boende” för mer information och länk till bokning). <br> <br>
+            Vigseln kommer ske i <b>Orsa kyrka</b>, 4,4 km från Kungshaga. <br><br><br>
+
+            <b style="font-size: 20px; text-align: center; display: block;">Festschema</b>
+          <div class="ramrunt">
+            <b style="font-size: 18px; text-align: center; display: block; ">FREDAG</b> <br> <br>
+            <b>Kl 17:00 - Danslektion med Anna </b> <br>
+            Icebreaker! Vi bryter isen och värmer upp inför morgondagen med en nybörjarlektion i bachata. Vad är
+            bachata?! Tänker ni nu. Bachata är dansen som Anna och Ruben kommer dansa som första dans.
+            Bachata är en pardans med latinamerikanskt ursprung som Anna och Ruben dansat tillsammans sedan första
+            dagen. Ja, det var faktiskt vad Anna och Ruben gjorde på sin första dejt.
+            Till skillnad från Anna och Ruben som lärde sig via Youtube tutorial så får ni lära er grundstegen live med
+            Anna! Efter Anna och Rubens första dans kommer nämligen ni alla bli uppbjudna att dansa bachata,
+            och vi ser fram emot det! Och var inte rädda - ni förväntas dansa lika illa som Ruben hans första gång.
+            Fulast dans vinner! <br><br>
+            I samband med danslektionen så bjuds det på snacks och importerat vin från Tyskland och Jämtland, brygd på
+            lokala gårdar. <br> <br>
+            <hr class="festhelglinjer">
+            <b> Kl 19:30 - Middag på Kungshaga Hotell </b> <br>
+            Vi återhämtar oss efter danslektionen och laddar upp inför morgondagen med en buffé i dalasmaker. <br><br>
+            <hr class="festhelglinjer">
+          </div>
+          <div class="ramrunt">
+            <b style="font-size: 18px; text-align: center; display: block;">LÖRDAG</b> <br> <br>
+            <b> Kl 14:00 Vigsel i Orsa kyrka </b> <br>
+            Efter vigseln bjuds det på snittar (vegetariskt eller lax?) och vi skålar för det nyblivna brudparet
+            Hohmann! <br>
+            <hr class="festhelglinjer">
+            <b>Kl 17:00 Middag och fest på Kungshaga </b> <br>
+            Efter lite mingel, medan vi fotograferas, blir det middag och fest på Kungshaga. Det kommer förstås att
+            finnas alternativ för dem som har allergier eller matpreferenser, anges i O.S.A. <br> <br>
+            Efter middagen blir det dans och skratt! <br>
+            Obs. Ta med bekvämaste skor för dans! Passa på att önska din favoritlåt vid O.S.A.
+            </p>
+            <hr class="festhelglinjer">
+          </div>
+        </div>
+
+        <div id="Boende" class="content-section" data-translate style="display: none">
+
+        </div>
+
+        <div id="resvagar" class="content-section" style="display: none">
+          <h2>Resvägar</h2>
+          <p>
+            Adress till bröllopet: <b> <i> Kungshaga Hotell - <a
+                  href="https://www.google.com/maps/search/?api=1&query=LINDÄNGSVÄGEN+11,+794+92+Orsa" target="_blank">
+                  LINDÄNGSVÄGEN 11, 794 92 Orsa </a> </b></i> <br>
+
+            <iframe class="responsive-map"
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7877.264471110389!2d14.623222047379715!3d61.09050024721267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLIND%C3%84NGSV%C3%84GEN%2011%2C%20794%2092%20Orsa!5e0!3m2!1ssv!2sse!4v1729246809203!5m2!1ssv!2sse"
+              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe> <br><br>
+
+            Från Göteborg, Norrköping eller Stockholm till bröllopet är enklast att resa med tåg (om ni inte tar bilen).
+            <br><br>
+
+            <b style="font-size: 18px;">Tåg: </b> <br>
+            Tågbiljetter kan ni finna på <a href="https://www.sj.se/" target="_blank"> SJ.se.</a> Ändhållplatsen är
+            ”Mora Station”. <br>
+            Mora Station ligger 12,1 km från Kungshaga hotell, och dit kan ni ta er med Buss 141 eller med Taxi. <br>
+            <br>
+
+
+            <b style="font-size: 18px;">Buss 141: </b> <br>
+            Från Mora station till Kungshaga (stationen heter Kungshaga och ligger några hundra meter från hotellet).
+            Bussarna går 1 till 2 gånger i timmen. För tidtabell och biljetter, klicka dig in på <a
+              href="https://www.dalatrafik.se/linje/141" target="_blank"> Dalatrafik.se</a> <br> <br>
+            Till och från Orsa kyrka går även buss 141. Från busstationen är gångavståndet 500 meter. <br> <br>
+
+            <b style="font-size: 18px;">Taxi: </b> <br>
+            Monalis Taxi Orsa tel: <a href="tel:0250-410 00">0250-410 00 </a>
+
+          </p>
+
+        </div>
+
+
+        <div id="onskelista" class="content-section" style="display: none">
+          <h2>Önskelista</h2>
+          <p>
+            Vår största önskan är att få dela denna stund med de som betyder mest för oss, därför är det vår enda
+            önskan.
+            Eftersom ni själva får stå för resa och övernattning så ber vi er att inte investera mer än så på oss.
+            <br><br>
+            Er närvaro är vår finaste present!
+
+          </p>
+        </div>
+
+        <div id="OSA" class="content-section" style="display: none;">
+          <h2>O.S.A</h2>
+          <p>Här kan ni anmäla er till bröllopet...
+            <br>
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdclX38os6soyShTqulw03bRbWEoxORL7M4gAOQBsibeXtNRw/viewform?embedded=true"
+              width="640" height="1431" frameborder="0" marginheight="0" marginwidth="0">Läser in …</iframe>
+            <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSdclX38os6soyShTqulw03bRbWEoxORL7M4gAOQBsibeXtNRw/viewform?usp=sf_link"> klicka hör</a> </a></a> -->
+          </p>
+
+        </div>
+
+
+        <div id="Spex" class="content-section" style="display: none">
+          <h2>Anmälan till Spex och tal </h2>
+          <p>Här anäller di dig </p>
+        </div>
+
+
+        <div id="brollopsfolje" class="content-section" style="display: none">
+          <h2>Bröllopsfölje</h2>
+          <p>
+            samt några andra personer som kan vara bra att känna till inför
+            vårt bröllop. .
+          </p>
+        </div>
+
+        <div id="bordsplaceing" class="content-section" style="display: none">
+          <h2>Bröllopsfölje</h2>
+          <p>
+            samt några andra personer som kan vara bra att känna till inför
+            vårt bröllop. .
+          </p>
+        </div>
+
+
+        <div id="bildgalleri" class="content-section" style="display: none">
+          <h2>Bildgalleri</h2>
+          <p>Det här är våra bilder.</p>
+          <!-- Carusell 1  -->
+          <div class="style-cauresell-bilder">
+            <div id="carouselID1" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active bild-caorusel">
+                  <img src="images/bild1.jpeg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild2.jpeg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild3.jpeg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild4.jpg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild5.jpg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild7.jpeg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild8.jpeg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild9.JPG" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild10.jpg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild11.jpg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild12.jpg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild13.JPG" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild14.JPG" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild16.jpeg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild17.jpeg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild18.jpeg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild19.jpeg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild20.jpg" class="d-block" alt="..." />
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselID1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselID1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div> <!--  slut på  carouselID1 -->
+
+            <!-- Carusell 2  -->
+            <!-- <div id="bildgalleri2" class="content-section" style="display: none"></div> TOG BORT DENNA  -->
+            <div id="carouselID2" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active bild-caorusel">
+                  <img src="images/bild11.jpg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild11.jpg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="images/bild11.jpg" class="d-block" alt="..." />
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselID2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselID2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div> <!-- CarouselID2 -->
+          </div> <!-- style-cauresell-bilder  -->
+        </div> <!-- bildgalleri  -->
+      </div> <!-- information -->
+    </div> <!-- Maincontent -->
+
+    <div class="HelaTimeCountDown">
+      <hr>
+      <p class="TimerCountText">Bröllopsdag om</p>
+      <div id="TimeCountDown">
+        <div id="days"></div>
+        <div id="hours"></div>
+        <div id="minutes"></div>
+        <div id="seconds"></div>
+      </div>
+    </div> <!--  HelaTimeCountDown -->
+  </div> <!-- MainCenterBox -->
+
+  <p class="fannyCopyright">Skapad av: Fanny Falck</p>
+
+  <script src="script.js"></script>
+  <script>
+    const mySections = [
+      // ********* Navigationbar
+      {
+        target: '#menu-valkommen',
+        swe: `Välkommen`,
+        ger: `Wilkommen`
+      },
+      {
+        target: '#menu-brollopshelg',
+        swe: `Bröllopshelgen`,
+        ger: `Das Wochenende der Hochzeit`
+      },
+      {
+        target: '#menu-boende',
+        swe: `Boende`,
+        ger: `Unterkunft`
+      },
+      {
+        target: '#menu-resvagar',
+        swe: `Resvägar`,
+        ger: `Reisewege`
+      },
+      {
+        target: '#menu-onskelista',
+        swe: `Önskelista`,
+        ger: `Wunschliste`
+      },
+      {
+        target: '#menu-osa',
+        swe: `O.S.A`,
+        ger: `U.A.w.g`
+      },
+      {
+        target: '#menu-spex',
+        swe: `Anmälan till spex och tal`,
+        ger: `Anmeldung für Unterhaltung und Rede`
+      },
+      {
+        target: '#menu-brollopsfolje',
+        swe: `Bröllopsfölje`,
+        ger: `Hochzeitsgefolge`
+      },
+      {
+        target: '#menu-bordplacering',
+        swe: `Bordplacering`,
+        ger: `Tischplatzierung`
+      },
+      {
+        target: '#menu-bildgalleri',
+        swe: `Bildgalleri`,
+        ger: `Bildergalerie`
+      },
+
+
+
+      {
+        target: '#Boende',
+        swe: `
               <h2>Boende</h2> 
               <p>
                 <b>Kungshaga Hotell: </b> <a href="https://www.kungshaga.se/sv" target="_blank"> Länk </a> 
@@ -344,7 +437,7 @@
                 Avstånd från Mora station: 14,8 km <br> 
               </p>
             `,
-            ger: `
+        ger: `
               <h2>Unterkunft</h2> 
               <p>
                 <b>Kungshaga Hotel: </b> <a href="https://www.kungshaga.se/sv" target="_blank"> Link </a> 
@@ -366,21 +459,22 @@
                 Entfernung zum Bahnhof Mora: 14,8 km <br> 
               </p>
             `
-          }
-        ]
+      }
+    ]
 
-        const myButtons = [
-          {
-            target: '#swedish-flag',
-            language: 'swe' 
-          },
-          {
-            target: '#german-flag',
-            language: 'ger' 
-          },
-        ]
-        
-      new LanguageHandler(myButtons, mySections, ["swe", "ger"])
-    </script>
-  </body>
+    const myButtons = [
+      {
+        target: '#SWEflagga',
+        language: 'swe'
+      },
+      {
+        target: '#GERflagga',
+        language: 'ger'
+      },
+    ]
+
+    new LanguageHandler(myButtons, mySections, ["swe", "ger"])
+  </script>
+</body>
+
 </html>
