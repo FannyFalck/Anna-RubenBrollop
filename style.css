@@ -230,7 +230,6 @@ ul#mynav {
   gap: 20px; 
 }
 
-
 /* ******** Ramrunt festschema ******** */
 .ramrunt {
   border: 2px solid #cccccc; 
@@ -360,6 +359,11 @@ ul#mynav {
     gap: 10px;
   }
 
+
+}
+
+
+=======
   /* ************  ******** ****Flagga  ****** ****** */
   .flaggSWE, .flaggGER {
     width: 50px; /* storlek  på flaggan */
@@ -437,3 +441,4 @@ ul#mynav {
   gap: 5px;
 }
 } 
+
