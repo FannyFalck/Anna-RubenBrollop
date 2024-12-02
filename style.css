@@ -285,9 +285,7 @@ ul#mynav {
   float: left; 
   margin: 0 10px 5px 0; 
   width: 40%; /* strolek på bilden*/
-  border: 5px double #495c40; 
   padding: 10px;
-  box-shadow: 10px 20px 30px rgba(85, 84, 84, 0.5); /* Skugga */
 }
 
 .brollopsfoljeBild p {
