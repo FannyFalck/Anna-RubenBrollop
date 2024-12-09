@@ -68,7 +68,7 @@
       <nav id="navigationbar">
         <ul id="mynav">
           <li><a id="menu-valkommen" href="#" data-target="valkommen" data-translate></a></li>
-          <li><a id="menu-brollopshelg" href="#" data-target="brollopshelg" data-translate></a></li>
+          <li><a id="menu-festschema" href="#" data-target="festschema" data-translate></a></li>
           <li><a id="menu-boende" href="#" data-target="Boende" data-translate></a></li>
           <li><a id="menu-resvagar" href="#" data-target="resvagar" data-translate> </a></li>
           <li><a id="menu-onskelista" href="#" data-target="onskelista" data-translate> </a></li>
@@ -84,49 +84,9 @@
 
 
       <div class="information">
-        <div id="valkommen" class="content-section"  data-translate> </div>
+        <div id="valkommen" class="content-section"  data-translate> </div> <!-- välkommen färdig  -->
 
-        <div id="brollopshelg" class="content-section" style="display: none" data-translate >
-          <h2>Bröllopshelg</h2>
-          <p>
-            Bröllopet kommer firas på Kungshaga Hotell, där det även finns rum att boka för er som vill bo där (se sidan
-            ”Boende” för mer information och länk till bokning). <br> <br>
-            Vigseln kommer ske i <b>Orsa kyrka</b>, 4,4 km från Kungshaga. <br><br><br>
-
-            <b style="font-size: 20px; text-align: center; display: block;">Festschema</b>
-          <div class="ramrunt">
-            <b style="font-size: 18px; text-align: center; display: block; ">FREDAG</b> <br> <br>
-            <b>Kl 17:00 - Danslektion med Anna </b> <br>
-            Icebreaker! Vi bryter isen och värmer upp inför morgondagen med en nybörjarlektion i bachata. Vad är
-            bachata?! Tänker ni nu. Bachata är dansen som Anna och Ruben kommer dansa som första dans.
-            Bachata är en pardans med latinamerikanskt ursprung som Anna och Ruben dansat tillsammans sedan första
-            dagen. Ja, det var faktiskt vad Anna och Ruben gjorde på sin första dejt.
-            Till skillnad från Anna och Ruben som lärde sig via Youtube tutorial så får ni lära er grundstegen live med
-            Anna! Efter Anna och Rubens första dans kommer nämligen ni alla bli uppbjudna att dansa bachata,
-            och vi ser fram emot det! Och var inte rädda - ni förväntas dansa lika illa som Ruben hans första gång.
-            Fulast dans vinner! <br><br>
-            I samband med danslektionen så bjuds det på snacks och importerat vin från Tyskland och Jämtland, brygd på
-            lokala gårdar. <br> <br>
-            <hr class="festhelglinjer">
-            <b> Kl 19:30 - Middag på Kungshaga Hotell </b> <br>
-            Vi återhämtar oss efter danslektionen och laddar upp inför morgondagen med en buffé i dalasmaker. <br><br>
-            <hr class="festhelglinjer">
-          </div>
-          <div class="ramrunt">
-            <b style="font-size: 18px; text-align: center; display: block;">LÖRDAG</b> <br> <br>
-            <b> Kl 14:00 Vigsel i Orsa kyrka </b> <br>
-            Efter vigseln bjuds det på snittar (vegetariskt eller lax?) och vi skålar för det nyblivna brudparet
-            Hohmann! <br>
-            <hr class="festhelglinjer">
-            <b>Kl 17:00 Middag och fest på Kungshaga </b> <br>
-            Efter lite mingel, medan vi fotograferas, blir det middag och fest på Kungshaga. Det kommer förstås att
-            finnas alternativ för dem som har allergier eller matpreferenser, anges i O.S.A. <br> <br>
-            Efter middagen blir det dans och skratt! <br>
-            Obs. Ta med bekvämaste skor för dans! Passa på att önska din favoritlåt vid O.S.A.
-            </p>
-            <hr class="festhelglinjer">
-          </div>
-        </div>
+        <div id="festschema" class="content-section" style="display: none" data-translate > </div> <!-- Festchsema  färdig  -->
 
         <div id="Boende" class="content-section" style="display: none" data-translate> </div>
 
@@ -435,10 +395,10 @@
   <script src="script.js"></script>
   <script>
     const mySections = [
-      //********************************************************************************************** 
-      // ********* ********* Navigationbar ********* *********
+      //************ ************************************ ********************************************** 
+      // ********* ********* Navigationbar ********* ********* ************** ************** ************** 
       { target: '#menu-valkommen', swe: `Välkommen`, ger: `Wilkommen` },
-      { target: '#menu-brollopshelg', swe: `Bröllopshelgen`, ger: `Das Wochenende der Hochzeit` },
+      { target: '#menu-festschema', swe: `Festschema`, ger: `Festprogramm` },
       { target: '#menu-boende', swe: `Boende`, ger: `Unterkunft` },
       { target: '#menu-resvagar', swe: `Resvägar`, ger: `Reisewege`},
       { target: '#menu-onskelista', swe: `Önskelista`, ger: `Wunschliste` },
@@ -448,8 +408,8 @@
       { target: '#menu-bordplacering', swe: `Bordplacering`, ger: `Tischplatzierung` },
       { target: '#menu-bildgalleri', swe: `Bildgalleri`, ger: `Bildergalerie` },
 
-      //********************************************************************************************** 
-      // ************* *************** VÄLKOMMEN **************** *******************
+      //************************ ******************************** ************************************** ************** 
+      // ************* *************** VÄLKOMMEN **************** ******************* ************** ************** 
       { target:`#valkommen`,
         swe: `
         <h2>Välkommen </h2>
@@ -545,6 +505,96 @@
         `,
 
       },
+      //***************** ************************* **************************  ************** ************** 
+      //************* *************** FESTSCHEMA *************** ***************  ************** ************** 
+      { target: `#festschema`, 
+        swe: `
+        <h1>Festschema</h1>
+        <div class="ramrunt">
+          <b style="font-size: 18px; text-align: center; display: block; "> FREDAG </b> <br> <br>
+          <b>Kl 17:00 - Danslektion med Anna på Skeervägen 4 </b> <br>
+          <p>
+            Icebreaker! Vi bryter isen och värmer upp inför morgondagen med en nybörjarlektion i bachata. Vad är bachata?! Tänker ni nu. 
+            Bachata är en latinoamerikansk pardans som Anna och Ruben dansade deras första dejt, och som de kommer dansa som första dans i deras äktenskap.  <br> <br>
+            I samband med danslektionen så bjuds det på snacks och importerat vin från Tyskland och Jämtland, bryggd på lokala gårdar.   <br> <br>
+            Er helt frivilliga hemläxa innan bröllopshelgen är att öva på grundstegen i bachata, med hjälp av denna tutorial:  <br> 
+
+            <a href="https://youtu.be/myNe-OtprMU?si=BMuy-Yr8443OYxfR" target="_blank"> Youtube Video</a>  <br><br>
+
+            <hr class="festhelglinjer">
+
+            <b> Kl 19:30 - Middag på Kungshaga Hotell </b> <br>
+            Vi återhämtar oss efter danslektionen och laddar upp inför morgondagen med en buffé i dalasmaker.  <br><br>
+            <hr class="festhelglinjer">
+          </p>
+        </div> 
+          
+        <div class="ramrunt">
+          <p>
+            <b style="font-size: 18px; text-align: center; display: block;"> LÖRDAG </b> <br> <br>
+            <b> Kl 14:00 Vigsel i Orsa kyrka </b> <br>
+            Efter vigseln tar ni er till Skeervägen 4 för mingel, medan brudparet med brudfölje blir fotograferade utanför kyrkan. 
+            Er hunger och törst stillas med snittar. Sedan vi skålar för det nyblivna brudparet Hohmann! <br> <br> 
+
+            <hr class="festhelglinjer">
+            <b>Kl 17:00 Middag och fest på Kungshaga </b> <br>
+            Middag i form av buffé och fest på Kungshaga. Det kommer förstås att finnas alternativ för dem som har allergier eller matpreferenser, anges i O.S.A. <br> <br>
+            Efter middagen blir det dans och skratt! Efter Anna och Rubens första dans kommer ni alla bli uppbjudna att dansa bachata, och vi ser fram emot det! 
+            Och var inte rädda – ni förväntas dansa lika illa som Ruben hans första gång. Fulast dans vinner! <br> <br>
+            Obs. ta med bekvämaste skor för dans! <br> <br>
+            
+            Passa på att önska din favoritlåt i O.S.A. !
+
+            <hr class="festhelglinjer">
+          </p>
+        </div>
+        `,
+        
+        ger: `
+        <h1>Festprogramm</h1>
+        <div class="ramrunt">
+          <b style="font-size: 18px; text-align: center; display: block; "> Freitag</b> <br> <br>
+          <b>17:00 Uhr Tanzkurs mit Anna, Skeervägen 4 </b> <br>
+          <p>
+            Icebreaker! Wir brechen das Eis und stimmen uns auf den großen Tag mit einem Anfängerkurs in Bachata ein. Ihr fragt euch jetzt sicher: 
+            Was ist Bachata?! Bachata ist ein lateinamerikanischer Paartanz, welchen Ruben und Anna tanzten auf ihrem ersten Date, 
+            und welchen sie zum ersten Tanz der Hochzeit werden. <br><br>
+            Während des Tanzkurses gibt es Snacks und importierten Wein aus Deutschland und Jämtland, hergestellt auf lokalen Höfen. <br><br>
+            Eure ganz freiwillige Hausaufgabe ist die Grundstritte vor die Hochzeit zu üben:<br>
+
+            <a href="https://youtu.be/myNe-OtprMU?si=BMuy-Yr8443OYxfR" target="_blank"> Youtube Video</a>  <br><br>
+
+            <hr class="festhelglinjer">
+
+            <b> 19:30 Uhr Abendessen im Kungshaga Hotel </b> <br>
+            Nach dem Tanzkurs erholen wir uns und tanken Kraft für den großen Tag mit einem Buffet voller regionaler Köstlichkeiten aus Dalarna.
+            Samstag 14:00 Uhr Trauung in der Kirche von Orsa <br><br>
+            <hr class="festhelglinjer">
+          </p>
+        </div> 
+           
+        <div class="ramrunt">
+          <p>
+            <b style="font-size: 18px; text-align: center; display: block;"> Samstag</b> <br> <br>
+            <b> 14:00 Uhr Trauung in der Kirche von Orsa </b> <br>
+            Nach der Zeremonie geht es für euch weiter zur Skeervägen 4 zum Empfang, während das Brautpaar und die Hochzeitsgesellschaft für Fotos vor der Kirche posieren. 
+            Um den kleinen Hunger und Durst zu stillen, werden Häppchen serviert, und wir stoßen auf das frisch vermählte Paar Hohmann an! <br> <br> 
+
+            <hr class="festhelglinjer">
+            <b>17:00 Uhr Abendessen und Feier im Kungshaga </b> <br>
+            Buffet und Fest im Kungshaga. Natürlich wird es für Gäste mit Allergien oder bestimmten Ernährungsgewohnheiten alternative Speisen geben; 
+            bitte gebt dies bei der Zusage an. Nach dem Abendessen erwarten euch Tanz und viel Gelächter!  <br>  <br>
+            Nach Annas und Rubens Eröffnungstanz werdet ihr alle aufgefordert, 
+            Bachata zu tanzen, und wir freuen uns schon darauf! Keine Sorge – ihr dürft genauso unperfekt tanzen, wie Ruben es beim ersten Mal getan hat. Der hässlichste Tanz gewinnt! <br> <br>
+            Hot tip: Bringt die bequemsten Schuhe zum Tanzen mit!  <br> <br>
+            Gebt bei der Anmeldung gern euren Musikwunsch an! <br>     
+
+            <hr class="festhelglinjer">
+          </p>
+        </div>
+        `,
+       },
+
       //******************************************************************** 
       //************* *************** Boende *************** *************** 
       {
