@@ -88,44 +88,10 @@
 
         <div id="festschema" class="content-section" style="display: none" data-translate > </div> <!-- Festchsema  färdig  -->
 
-        <div id="Boende" class="content-section" style="display: none" data-translate> </div>
+        <div id="Boende" class="content-section" style="display: none" data-translate> </div> <!-- Boende  färdig  -->
 
-        <div id="resvagar" class="content-section" style="display: none" data-translate>
-          <h2>Resvägar</h2>
-          <p>
-            Adress till bröllopet: <b> <i> Kungshaga Hotell - <a
-            href="https://www.google.com/maps/search/?api=1&query=LINDÄNGSVÄGEN+11,+794+92+Orsa" target="_blank">
-            LINDÄNGSVÄGEN 11, 794 92 Orsa </a> </b></i> <br>
-
-            <iframe class="responsive-map"
-              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7877.264471110389!2d14.623222047379715!3d61.09050024721267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLIND%C3%84NGSV%C3%84GEN%2011%2C%20794%2092%20Orsa!5e0!3m2!1ssv!2sse!4v1729246809203!5m2!1ssv!2sse"
-              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe> <br><br>
-
-            Från Göteborg, Norrköping eller Stockholm till bröllopet är enklast att resa med tåg (om ni inte tar bilen).
-            <br><br>
-
-            <b style="font-size: 18px;">Tåg: </b> <br>
-            Tågbiljetter kan ni finna på <a href="https://www.sj.se/" target="_blank"> SJ.se.</a> Ändhållplatsen är
-            ”Mora Station”. <br>
-            Mora Station ligger 12,1 km från Kungshaga hotell, och dit kan ni ta er med Buss 141 eller med Taxi. <br>
-            <br>
-
-
-            <b style="font-size: 18px;">Buss 141: </b> <br>
-            Från Mora station till Kungshaga (stationen heter Kungshaga och ligger några hundra meter från hotellet).
-            Bussarna går 1 till 2 gånger i timmen. För tidtabell och biljetter, klicka dig in på <a
-              href="https://www.dalatrafik.se/linje/141" target="_blank"> Dalatrafik.se</a> <br> <br>
-            Till och från Orsa kyrka går även buss 141. Från busstationen är gångavståndet 500 meter. <br> <br>
-
-            <b style="font-size: 18px;">Taxi: </b> <br>
-            Monalis Taxi Orsa tel: <a href="tel:0250-410 00">0250-410 00 </a>
-
-          </p>
-
-        </div>
-
-
+        <div id="resvagar" class="content-section" style="display: none" data-translate> </div> <!-- Resvägar  färdig  -->
+      
         <div id="onskelista" class="content-section" style="display: none" data-translate>
           <h2>Önskelista</h2>
           <p>
@@ -651,7 +617,65 @@
         </p>
         `
       }, 
-  
+      //********* ******************* ***************************** *********** **************************
+      //************* *************** Resvägar *************** ************* ************* *************
+      { target: `#resvagar`, 
+        swe: `
+        <h2>Resvägar</h2>
+        <p>
+          Från Göteborg, Norrköping eller Stockholm till bröllopet är enklast att resa med tåg (om ni inte tar bilen). <br> <br>
+
+          Adress till bröllopet: <b> <i> Kungshaga Hotell - <a href="https://www.google.com/maps/search/?api=1&query=LINDÄNGSVÄGEN+11,+794+92+Orsa" 
+          target="_blank"> LINDÄNGSVÄGEN 11, 794 92 Orsa </a> </b></i> <br>
+
+          <iframe class="responsive-map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7877.264471110389!2d14.623222047379715!3d61.09050024721267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLIND%C3%84NGSV%C3%84GEN%2011%2C%20794%2092%20Orsa!5e0!3m2!1ssv!2sse!4v1729246809203!5m2!1ssv!2sse"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" eferrerpolicy="no-referrer-when-downgrade"></iframe> <br><br>
+
+          <b style="font-size: 18px;">Tåg: </b> <br>
+          Tågbiljetter kan ni finna på <a href="https://www.sj.se/" target="_blank"> SJ.se.</a> Ändhållplatsen är ”Mora Station”. <br>
+          Mora Station ligger 12,1 km från Kungshaga hotell, och dit kan ni ta er med Buss 141 eller med Taxi. <br>
+          Hör av er om ni behöver hjälp med transport från tåget. <br> <br>
+
+
+          <b style="font-size: 18px;">Buss 141: </b> <br>
+          Från Mora station till Kungshaga (stationen heter Kungshaga och ligger några hundra meter från hotellet). 
+          Bussarna går 1 till 2 gånger i timmen. För tidtabell och biljetter, klicka dig in på <a href="https://www.dalatrafik.se/linje/141" target="_blank"> Dalatrafik.se</a> <br> <br>
+          Till och från Orsa kyrka går även buss 141. Från busstationen är gångavståndet 500 meter. <br> 
+
+          <b style="font-size: 18px;">Taxi: </b> <br>
+          Monalis Taxi Orsa tel: <a href="tel:0250-410 00">0250-410 00 </a>
+
+        </p> 
+        `, 
+
+        ger: `
+        <h2>Reisewege</h2>
+        <p>
+          Von Göteborg, Norrköping oder Stockholm zur Hochzeit reist ihr am einfachsten mit dem Zug (falls ihr nicht das Auto nehmt). <br> <br>
+
+          Adress till bröllopet: <b> <i> Kungshaga Hotell - <a href="https://www.google.com/maps/search/?api=1&query=LINDÄNGSVÄGEN+11,+794+92+Orsa" 
+          target="_blank"> LINDÄNGSVÄGEN 11, 794 92 Orsa </a> </b></i> <br>
+
+          <iframe class="responsive-map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7877.264471110389!2d14.623222047379715!3d61.09050024721267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLIND%C3%84NGSV%C3%84GEN%2011%2C%20794%2092%20Orsa!5e0!3m2!1ssv!2sse!4v1729246809203!5m2!1ssv!2sse"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" eferrerpolicy="no-referrer-when-downgrade"></iframe> <br><br>
+
+          <b style="font-size: 18px;">Zug: </b> <br>
+          Zugtickets könnt ihr auf <a href="https://www.sj.se/" target="_blank"> SJ.se.</a> Der Zielbahnhof ist „Mora Station“. <br>
+          Der Bahnhof Mora liegt 12,1 km vom Kungshaga Hotell entfernt und kann mit Bus 141 oder per Taxi erreicht werden. <br>
+
+          Meldet euch wenn ihr Transporthilfe vom Zug braucht. <br> <br>
+
+          <b style="font-size: 18px;">Bus 141: </b> <br>
+          Von der Mora Station nach Kungshaga (die Haltestelle heißt Kungshaga und liegt einige hundert Meter vom Hotel entfernt). 
+          Die Busse fahren ein- bis zweimal pro Stunde. Für Fahrplan und Tickets besucht <a href="https://www.dalatrafik.se/linje/141" target="_blank"> Dalatrafik.se</a> <br> <br>
+
+          <b style="font-size: 18px;">Taxi: </b> <br>
+          Monalis Taxi Orsa tel: <a href="tel:0250-410 00">0250-410 00 </a>
+        </p>
+        `,
+      
+      },
+
       //******************************************************************** 
       //************* *************** Bildgalleri ***************
       {
