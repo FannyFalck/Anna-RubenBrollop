@@ -75,7 +75,7 @@
           <li><a id="menu-osa" href="#" data-target="OSA" data-translate> </a></li>
           <li><a id="menu-spex" href="#" data-target="Spex" data-translate></a></li>
           <li><a id="menu-brollopsfolje" href="#" data-target="brollopsfolje" data-translate></a></li>
-          <li><a id="menu-bordplacering" href="#" data-target="Bordplacering" data-translate></a></li>
+          <li><a id="menu-bordplacering" href="#" data-target="bordplacering" data-translate></a></li>
           <li><a id="menu-bildgalleri" href="#" data-target="bildgalleri" data-translate></a></li>
 
 
@@ -84,7 +84,7 @@
 
 
       <div class="information">
-        <div id="valkommen" class="content-section"  data-translate> </div> <!-- välkommen färdig  -->
+        <div id="valkommen" class="content-section"  style="display: none" data-translate> </div> <!-- välkommen färdig  -->
 
         <div id="festschema" class="content-section" style="display: none" data-translate > </div> <!-- Festchsema  färdig  -->
 
@@ -98,16 +98,9 @@
 
         <div id="Spex" class="content-section" style="display: none" data-translate>  </div> <!-- SPEX färdig  -->
 
-
         <div id="brollopsfolje" class="content-section" style="display: none" data-translate> </div> <!-- Bröloppsfölje färdig  --> 
 
-        <div id="bordsplaceing" class="content-section" style="display: none" data-translate>
-          <h2>Bordsplacering </h2>
-          <p>
-           Bordplacering
-          </p>
-        </div>
-
+        <div id="bordplacering" class="content-section"  data-translate> </div>  <!-- Bordsplacering  färdig  --> 
 
         <div id="bildgalleri" class="content-section" style="display: none" data-translate>
           <div id="bildgalleri_rubrik" data-translate>
@@ -213,6 +206,7 @@
       </div> <!-- information -->
     </div> <!-- Maincontent -->
 
+
     <div class="HelaTimeCountDown">
       <hr>
       <p id="TimerCountText_id" class="TimerCountText" data-translate></p>
@@ -248,7 +242,7 @@
       { target: '#menu-osa', swe: `O.S.A`, ger: `U.A.w.g` },
       { target: '#menu-spex', swe: `Anmälan till spex och tal`, ger: `Anmeldung für Unterhaltung und Rede` },
       { target: '#menu-brollopsfolje', swe: `Bröllopsfölje`, ger: `Hochzeitsgefolge` },
-      { target: '#menu-bordplacering', swe: `Bordplacering`, ger: `Tischplatzierung` },
+      { target: '#menu-bordplacering', swe: `bordplacering`, ger: `Tischplatzierung` },
       { target: '#menu-bildgalleri', swe: `Bildgalleri`, ger: `Bildergalerie` },
 
       //************************ ******************************** ************************************** ************** 
@@ -832,7 +826,23 @@
         </div>  <!-- brollopsfoljeBild -->
         `,
       }, 
+      //******************************************************************** *********************** *********************** 
+      //************* ************* Bordplacering ***************  *********************** *********************** 
+      { target: `#bordplacering`, 
+        swe: `
+        <h2>Bordplacering </h2>
+        <p>
+          Kommer inom kort…
+        </p>
+        `, 
 
+        ger: `
+        <h2>Tischplatzierung </h2>
+        <p>
+          Kommt in Kürze…
+        </p>
+        `, 
+      }, 
       //******************************************************************** *********************** *********************** 
       //************* *************** Bildgalleri ***************  *********************** *********************** 
       {
