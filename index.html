@@ -92,17 +92,7 @@
 
         <div id="resvagar" class="content-section" style="display: none" data-translate> </div> <!-- Resvägar  färdig  -->
       
-        <div id="onskelista" class="content-section" style="display: none" data-translate>
-          <h2>Önskelista</h2>
-          <p>
-            Vår största önskan är att få dela denna stund med de som betyder mest för oss, därför är det vår enda
-            önskan.
-            Eftersom ni själva får stå för resa och övernattning så ber vi er att inte investera mer än så på oss.
-            <br><br>
-            Er närvaro är vår finaste present!
-
-          </p>
-        </div>
+        <div id="onskelista" class="content-section" style="display: none" data-translate>  </div>  <!-- Önskelista färdig  -->
 
         <div id="OSA" class="content-section" style="display: none;" data-translate>
           <h2>O.S.A</h2>
@@ -560,11 +550,9 @@
         </div>
         `,
        },
-
       //******************************************************************** 
       //************* *************** Boende *************** *************** 
-      {
-        target: '#Boende',
+      { target: '#Boende',
         swe: `
         <h2>Boende</h2> 
         <p>
@@ -589,6 +577,7 @@
           Avstånd från Mora station: 14,8 km <br> 
         </p>
         `,
+
         ger: `
         <h2>Unterkunft</h2> 
         <p>
@@ -675,9 +664,44 @@
         `,
       
       },
+      //************ ***************************** *************************** ************** 
+      //************* *************** Önskelista *************** **************  ************** 
+      { target: `#onskelista`,
+        swe: `
+        <h2>Önskelista</h2>
+        <p>
+          Det som betyder mest för oss är att få fira denna speciella dag tillsammans med er som står oss nära. Därför har vi inga andra önskningar. 
+          Att ni är med oss är det viktigaste för oss och den finaste presenten vi kan få! <br> <br>
+
+          Om ni ändå vill uppmärksamma vår dag med en gåva har vi satt ihop en önskelista som ni kan kika på: 
+          <a href="https://presentlistan.nu/B2519B/" target="_blank"> Till hemmet</a>  <br> <br>
+
+          <b>Om ni hellre vill sponsra bröllopsfesten eller vår bröllopsresa så är vårt bröllopskonto följande:</b> <br>  
+          Clearingnummer:<b> 8147-1 </b> <br> 
+          Kontonummer: <b> 764 459353-0 </b> 
+        </p>
+        `,
+        
+        ger: `
+        <h2>Wunschliste</h2>
+        <p>
+          Das Wichtigste für uns ist, diesen besonderen Tag mit euch, unseren Liebsten, zu feiern. 
+          Deshalb haben wir keine weiteren Wünsche.<br> <br>
+
+          Falls ihr unseren Tag dennoch mit einer kleinen Aufmerksamkeit würdigen möchtet, 
+          haben wir eine Wunschliste zusammengestellt, die ihr euch ansehen könnt;<br>
+          <a href="https://presentlistan.nu/B2519B/" target="_blank"> Till hemmet</a>  <br> <br>
+
+          <b>Wenn ihr eher unsere Hochzeit oder Hochzeitsreise sponsern wollt, ist unsere Hochzeitskonto:</b> <br> 
+          Clearingnummer:<b> 8147-1 </b> <br> 
+          Kontonummer: <b> 764 459353-0 </b> 
+        </p>
+        `,
+       }, 
+
 
       //******************************************************************** 
-      //************* *************** Bildgalleri ***************
+      //************* *************** Bildgalleri *************** 
       {
         target: `#bildgalleri_rubrik`,
         swe: `
