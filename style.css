@@ -41,7 +41,7 @@ header #menuToggle {
   }
 }
 
-.valkomstext {
+/* .valkomstext { gamla text innan william fixade fast text på bild 
   position: absolute;
   top: 80px;
   text-align: center;
@@ -49,8 +49,7 @@ header #menuToggle {
   font-size: 70px;
   font-family: "Tangerine", cursive;
   padding: 10px;
-  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
-}
+} */
 
 h2 {
   font-family: "Cinzel Decorative", serif;
@@ -302,6 +301,10 @@ ul#mynav {
   border: none;
 }
 
+.scrollPrevent{
+  height: 100%;
+  overflow: hidden;
+}
 /* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
 /* ******** ******** ********  NAVIGERINGMENY @media query 900 ******** ******** ******** ********   */
 /* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
@@ -385,13 +388,6 @@ ul#mynav {
   }
 
   /*  ************ **** Välkomstext   **** *********/
-  .valkomstext {
-    top: 60px;
-    left: 80px;
-    color: white;
-    text-align: center;
-    font-size: 60px;
-  }
 
   .style-cauresell-bilder {
     display: flex;
@@ -418,69 +414,11 @@ ul#mynav {
   
 }
 
-@media (max-width: 700px) {
-  .valkomstext {
-    top: 60px;
-    /* Placera den från toppen av fönstret */
-    left: 130px;
-    /* Placera den från vänster av fönstret */
-    font-size: 40px;
-    /* Anpassa storleken */
-    color: white;
-    text-align: center;
-  }
-}
-
-@media (max-width: 600px) {
-  .valkomstext {
-    top: 60px;
-    /* Placera den från toppen av fönstret */
-    left: 80px;
-    /* Placera den från vänster av fönstret */
-    font-size: 40px;
-    /* Anpassa storleken */
-    color: white;
-    text-align: center;
-  }
-}
-
-@media (max-width: 540px) {
-  .valkomstext {
-    top: 60px;
-    /* Placera den från toppen av fönstret */
-    left: 50px;
-    /* Placera den från vänster av fönstret */
-    font-size: 38px;
-    /* Anpassa storleken */
-    color: white;
-    text-align: center;
-  }
-}
-
-@media (max-width: 430px) {
-  .valkomstext {
-    top: 55px;
-    /* Justera efter behov */
-    left: 45px;
-    /* Justera efter behov */
-    font-size: 30px;
-    /* Mindre textstorlek */
-    text-align: center;
-    color: white;
-  }
-}
 
 /* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
 /* ******** ******** ********  NAVIGERINGMENY @media query 375 ******** ******** ******** ********   */
 /* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
 @media (max-width: 375px) {
-  .valkomstext {
-    top: 60px;
-    left: 50px;
-    font-size: 25px;
-    text-align: center;
-    color: white;
-  }
 
   .style-cauresell-bilder {
     flex-direction: column;

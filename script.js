@@ -1,6 +1,5 @@
 //***********************************************************************************************
 // ******* ******* Hantering av navigerings sido byte ******* *******
-// Hämtar länkar som har 'data-target' attribut
 document.querySelectorAll('a[data-target]').forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault();
@@ -19,15 +18,27 @@ document.querySelectorAll('a[data-target]').forEach(link => {
 
     if (targetElement) {
       targetElement.style.display = "block";
-      targetElement.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
+      scrollToTargetAdjusted(target)
     } else {
       console.log('Sektionen hittades inte: ' + target);
     }
   });
 });
+
+//***********************************************************************************************
+// ******* ******* Scroll Reload ******* *******
+function scrollToTargetAdjusted(target){
+  var element = document.getElementById(target);
+  var headerOffset = 85;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth"
+  });
+}
+
 
 //***********************************************************************************************
 // ******* ******* Time Conter Down ******* *******
@@ -73,12 +84,14 @@ TimeCountDown();
 document.getElementById("menuToggle").addEventListener("click", function () {
   var nav = document.getElementById("mynav");
   nav.classList.toggle("visible");
+  document.body.classList.toggle("scrollPrevent");
 });
 
 document.querySelectorAll("#mynav li").forEach((element) => {
   element.addEventListener("click", function () {
     var nav = document.getElementById("mynav");
     nav.classList.toggle("visible");
+    document.body.classList.toggle("scrollPrevent");
   });
 
 });
