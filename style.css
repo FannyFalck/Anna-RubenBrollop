@@ -291,6 +291,7 @@ ul#mynav {
 .brollopsfoljeBild p {
   margin: 0 0 20px 0; /*  avstånd under texten */
   font-size: 18px;
+  padding-top: 6px;
 }
 
 .reparatlinjer {
