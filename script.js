@@ -209,3 +209,57 @@ class LanguageHandler {
     }
   }
 }
+
+//***********************************************************************************************
+// ******* ******* Bord placering ******* *******
+
+ document.querySelectorAll('.chair').forEach(chair => {
+  chair.addEventListener('mouseover', function(event) {
+    if (window.innerWidth > 768) {
+      showGuestInfo(this);
+    }
+  });
+
+  chair.addEventListener('click', function(event) {
+    // Kolla om popup-rutan är synlig och om det är samma stol som klickas på igen
+    const infoBox = document.getElementById('guest-info');
+    if (infoBox.style.display === 'block' && infoBox.getAttribute('data-active-chair') === this.getAttribute('data-guestnr')) {
+      infoBox.style.display = 'none';
+      infoBox.removeAttribute('data-active-chair');
+    } else {
+      showGuestInfo(this);
+    }
+  });
+
+  function showGuestInfo(chair) {
+    const guestId = chair.getAttribute('data-guestnr');
+    const guestDescription = chair.getAttribute('data-description');
+
+    // Hämta stolens position
+    const rect = chair.getBoundingClientRect();
+
+    // Placera pop-up-rutan nära stolen
+    const infoBox = document.getElementById('guest-info');
+    infoBox.style.top = `${rect.bottom + window.scrollY + 10}px`; // 10px under stolen
+    infoBox.style.left = `${rect.left + window.scrollX}px`; // Samma vänsterposition som stolen
+
+    // Sätt innehåll för pop-up baserat på data-guestnr och data-description
+    // document.getElementById('guest-image').src = `images/${guestId}.jpg`; DEN ÄKTA 
+    document.getElementById('guest-image').src = `./imagesBrollopsfolje/${guestId}.jpg`;
+    
+    document.getElementById('guest-description').innerText = guestDescription;
+
+    // Visa pop-up-rutan
+    infoBox.style.display = 'block';
+    infoBox.setAttribute('data-active-chair', guestId);
+  }
+});
+
+{/* // Lägg till en click-händelse på hela dokumentet för att stänga popupen om du klickar någonstans utanför stolen */}
+document.addEventListener('click', function(event) {
+  if (!event.target.classList.contains('chair') && !document.getElementById('guest-info').contains(event.target)) {
+    document.getElementById('guest-info').style.display = 'none';
+    document.getElementById('guest-info').removeAttribute('data-active-chair');
+  }
+});
+

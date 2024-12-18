@@ -495,3 +495,62 @@ ul#mynav {
     
   }
 }
+
+
+
+
+/* bordplacering */
+
+/*  ****** ****** ****** Popup, info, bilder och text ****** ****** ******  */
+#guest-info {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid black;
+  padding: 10px;
+  max-width: 450px;
+  background-color: rgb(208, 193, 242);
+  border-radius: 3px;
+}
+
+/* .guest-content {
+  display: flex;
+  align-items: flex-start;
+} */
+
+#guest-image {
+  width: 40%;
+  height: 40%;
+  margin-right: 15px;
+  border-radius: 3px;
+  display: block;
+}
+
+
+#guest-description {
+  font-size: 15px;
+  text-align: left;
+  max-width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.chair:hover {
+  cursor: pointer;
+  stroke-width: 2;
+  stroke: darkgray;
+}
+
+
+  /* Exempel på media query för att justera popupen på mobila enheter */
+@media (max-width: 375px) {
+  #guest-info {
+    width: 50%; /* Gör popupen bredare på små skärmar */
+    font-size: 14px; /* Justera textstorlek för små skärmar */
+  }
+
+  #guest-image {
+    width: 100%; /* Gör bilden mindre på små skärmar */
+    display: block;
+  }
+}
