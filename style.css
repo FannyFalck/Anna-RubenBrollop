@@ -326,7 +326,6 @@ ul#mynav {
     left: 0;
     background-color: #DDF7D1;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 2;
     overflow: hidden;
     z-index: 1500;
   }
@@ -354,6 +353,7 @@ ul#mynav {
 
   #navigationbar {
     z-index: 1000;
+    visibility: hidden;
   }
 
   /*  ************ ****Time Conter Down  **** *********/
