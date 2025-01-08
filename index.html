@@ -262,7 +262,7 @@
       { target: '#menu-festschema', swe: `Festschema`, ger: `Festprogramm` },
       { target: '#menu-boende', swe: `Boende`, ger: `Unterkunft` },
       { target: '#menu-resvagar', swe: `Resvägar`, ger: `Reisewege`},
-      { target: '#menu-onskelista', swe: `Önskelista`, ger: `Wunschliste` },
+      { target: '#menu-onskelista', swe: `Presentförslag`, ger: `Geschenkvorschläge` },
       { target: '#menu-osa', swe: `O.S.A`, ger: `U.A.w.g` },
       { target: '#menu-spex', swe: `Anmälan till spex och tal`, ger: `Anmeldung für Unterhaltung und Rede` },
       { target: '#menu-brollopsfolje', swe: `Bröllopsfölje`, ger: `Hochzeitsgefolge` },
@@ -394,7 +394,7 @@
           <p>
             <b style="font-size: 18px; text-align: center; display: block;"> LÖRDAG </b> <br> <br>
 
-            <b> Kl 8-10:30 Frukostbuffé </b> <br> 
+            <b> Kl 08.00-10:00 Frukostbuffé </b> <br> 
             För er som bor på Kungshaga hotell <br> <br> 
 
             <b> Kl 14:00 Vigsel i Orsa kyrka </b> <br>
@@ -443,7 +443,8 @@
         <div class="ramrunt">
           <p>
             <b style="font-size: 18px; text-align: center; display: block;"> Samstag</b> <br> <br>
-            <b>8-10:30 Uhr Frühstücksbuffet </b> <br>
+
+            <b> 08.00-10:00 Uhr Frühstücksbuffet </b> <br>
             Im Kungshaga für die Hotelgäste <br> <br>
 
             <b> 14:00 Uhr Trauung in der Kirche von Orsa </b> <br>
@@ -584,13 +585,15 @@
       //************* *************** Önskelista *************** **************  ************** 
       { target: `#onskelista`,
         swe: `
-        <h2>Önskelista</h2>
+        <h2>Presentförslag</h2>
         <p>
           Det som betyder mest för oss är att få fira denna speciella dag tillsammans med er som står oss nära. Därför har vi inga andra önskningar. 
           Att ni är med oss är det viktigaste för oss och den finaste presenten vi kan få! <br> <br>
 
           Om ni ändå vill uppmärksamma vår dag med en gåva har vi satt ihop en önskelista som ni kan kika på: 
           <a href="https://presentlistan.nu/B2519B/" target="_blank"> Till hemmet</a>  <br> <br>
+
+          Obs - För att undvika att flera köper samma present, registrera om ni köpt något på sidan länkad ovan. <br> <br>
 
           <b>Om ni hellre vill sponsra bröllopsfesten eller vår bröllopsresa så är vårt bröllopskonto följande:</b> <br>  
           Clearingnummer:<b> 8147-1 </b> <br> 
@@ -599,14 +602,16 @@
         `,
         
         ger: `
-        <h2>Wunschliste</h2>
+        <h2>Geschenkvorschläge</h2>
         <p>
           Das Wichtigste für uns ist, diesen besonderen Tag mit euch, unseren Liebsten, zu feiern. 
           Deshalb haben wir keine weiteren Wünsche.<br> <br>
 
           Falls ihr unseren Tag dennoch mit einer kleinen Aufmerksamkeit würdigen möchtet, 
-          haben wir eine Wunschliste zusammengestellt, die ihr euch ansehen könnt;<br>
-          <a href="https://presentlistan.nu/B2519B/" target="_blank"> Till hemmet</a>  <br> <br>
+          haben wir eine Wunschliste zusammengestellt, die ihr euch ansehen könnt; 
+          <a href="https://presentlistan.nu/B2519B/" target="_blank"> Für Haushalt Hohmann </a>  <br> <br>
+
+          Notiz - Um zu vermeiden, dass mehrere Personen das gleiche Geschenk kaufen, registriert bitte euren Kauf auf der oben verlinkten Seite. <br> <br>
 
           <b>Wenn ihr eher unsere Hochzeit oder Hochzeitsreise sponsern wollt, ist unsere Hochzeitskonto:</b> <br> 
           Clearingnummer:<b> 8147-1 </b> <br> 
@@ -646,7 +651,7 @@
           <b>Wilhelmina</b> är en av Annas närmaste vänner. Hon sprudlar av energi och idéer och hennes kreativa hjärna är som gjord för att organisera en bröllopsfest! <br><br>
 
           <b>Toastmaster: </b> <br> 
-          <b>Olle</b> 
+          <b>Olle</b> är toastmaster för hans härliga energi och otroliga förmåga att alltid inkludera och lyssna på alla, samt hans förmåga till att leda. 
 
         </p>
         `,
@@ -658,10 +663,10 @@
           Ruben und Anna sehen diese Anmeldung nicht, sie geht direkt an unsere Toastmasters Olle und Wilhelmina. <br> <br>
 
           <b> Toastmadame: </b> <br>
-          <b>Wilhelmina</b> <br><br>
+          <b>Wilhelmina</b> ist eine von Annas engsten Freundinnen. Sie sprüht vor Energie und Ideen, und ihr kreativer Geist ist wie geschaffen dafür, eine Hochzeitsfeier zu organisieren.<br><br>
 
           <b>Toastmeister: </b> <br> 
-          <b>Olle</b>   
+          <b>Olle</b>   ist Toastmaster für seine wunderbare Energie und unglaubliche Fähigkeit, immer jeden einzubeziehen und ihm zuzuhören, sowie für seine Führungsqualitäten.  
 
         </p>
         `, 
@@ -670,7 +675,9 @@
       //************* ************* Bröllopsfölje ***************  *********************** *********************** 
       { target: `#brollopsfolje`, 
         swe: `
-        <h2>Bröllopsfölje</h2> 
+        <h2>Bröllopsfölje</h2> <br>
+        <h4> <b> Annas följe </b> </h4> <br>
+
         <div class="brollopsfoljeBild">
           <div class="willimina"> 
             <img src="imagesBrollopsfolje/" class="willimina" alt="Wilhemina & Anna"/>   
@@ -725,38 +732,50 @@
             </p>  
           </div> <hr class="reparatlinjer"> <br>
 
+          <h4> <b> Olles följe </b> </h4> <br>
+
           <div class="Olle"> 
             <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
             <p>
-              <b>Olle</b> 
-            </p>
-          </div> <hr class="reparatlinjer"> 
-
-          <div class="Erik"> 
-            <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
-            <p>
-              <b>Erik</b> 
-            </p>
-          </div> <hr class="reparatlinjer"> 
-
-          <div class="Andreas"> 
-            <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
-            <p>
-              <b>Andreas</b>  
-            </p>
-          </div> <hr class="reparatlinjer"> 
-
-          <div class="Johan"> 
-            <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
-            <p>
-              <b>Johan </b> 
+              <b>Olle</b> och Ruben träffades i vattenövningshallen på regementet där de båda jobbade. De fick bra kontakt och fortsatte träna tillsammans och hitta på andra saker. 
+              När Olle började studera till officer övergick vattenfys pass till minst en årlig träff hos Olle i Karlskrona. Olle finns alltid tillgänglig och är en fantastisk fin vän, 
+              med ett otroligt varmt hjärta. Det samt olles fina förmåga att höja stämningen gör honom till bäst man. 
             </p>
           </div> <hr class="reparatlinjer"> 
 
           <div class="Leo"> 
             <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
             <p>
-              <b>Leo</b> 
+              <b>Leo</b> ryckte in på AMF när Ruben var instruktör för denvärnpliktskullen. Även om de var på olika plutoner gick de högvakt på Stockholms slott tillsammans. 
+              Efter värnplikten tog Leo anställning och flyttade ihop med Andreas. Genom vattenfys och matlagningskvällar i Andreas regi upptäckte Ruben och Leo ett gemensamt intresse 
+              för friluftsliv och åkte på äventyr i Grövelsjön tillsammans. Efter detta äventyr förblev de nära vänner som träffas med jämna mellanrum och försöker hitta nästa äventyr.
+            </p>
+          </div> <hr class="reparatlinjer"> 
+
+          <div class="Erik"> 
+            <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
+            <p>
+              <b>Erik</b> och Ruben träffades första gången på morgonuppställningen dag 1 på GMU. De tilldelades samma grupp och spenderade 9 månader näst intill dygnet runt med varandra och 
+              löste många svåra uppgifter tillsammans. Utbildningen svetsade samman gruppen och även om de gick skilda vägar efter MUCK umgicks de mycket på fritiden. Erik, 
+              Andreas och Ruben har även gått en del av Kungsleden tillsammans, där de efter 16 timmar i bilen vandrade 100km, gick upp för större delen av Kebnekaise och sedan körde hem 16 timmar igen. 
+              Erik är en god vän som man alltid kan hitta på något kul med.
+            </p>
+          </div> <hr class="reparatlinjer"> 
+
+          <div class="Andreas"> 
+            <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
+            <p>
+              <b>Andreas</b> var den första som kom till Berga dagen innan inryck, och Ruben den andra. De tilldelades samma pluton men inte samma grupp. Än dock hade de god kontakt och umgicks mycket under utbildningens gång. 
+              Efter MUCK arbetade de tätt tillsammans på samma kompani i flera år och umgicks mycket på fritiden. Andreas har nu länge varit en nära vän som lyssnar och hjälper i svåra tider. 
+              Tillsammans har de även planerat att åka vasaloppet och Nordenskiöld. Dock har Andreas än inte åkt vasaloppet, och Ruben inte Nordenskiöld.
+            </p>
+          </div> <hr class="reparatlinjer"> 
+
+          <div class="Mattis"> 
+            <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
+            <p>
+              <b>Mattis</b> klev in i livet när Ruben var 6 år gammal. Efter lite bråk och uppväxt kommer de idag bra överens. I yrkeslivet har han utforskat kaffets värld och har jobbat på espressohouse och jobbar nu på Da Matteo i Göteborg, 
+              där han nu ska fördjupa sina kunskaper genom att börja rosta kaffe. Mattis siktar på att öppna ett eget café där han själv rostar och brygger kaffe från världens olika hörn. Ska ni ha en riktigt bra kopp kaffe, fråga Mattis. 
             </p>
           </div> <hr class="reparatlinjer"> 
 
@@ -765,6 +784,8 @@
         
         ger: `
         <h2>Hochzeitsgefolge</h2> 
+        <h4> <b> Anna Gefolge </b> </h4> <br>
+
         <div class="brollopsfoljeBild">
           <div class="willimina"> 
             <img src="imagesBrollopsfolje/" class="willimina" alt="Wilhemina & Anna"/>   
@@ -822,40 +843,59 @@
               Ausland und spielt in der schwedischen Nationalmannschaft. Außerhalb des Spielfelds ist sie sophisticated, freundlich und organisiert.
 
             </p>  
-          </div> <hr class="reparatlinjer"> <br>
+          </div> <hr class="reparatlinjer"> <br> <br>
+
+
+          <h4> <b> Rubens Gefolge </b> </h4> <br>
 
           <div class="Olle"> 
             <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
             <p>
-              <b>Olle</b>
-            </p>
-          </div> <hr class="reparatlinjer"> 
-
-          <div class="Erik"> 
-            <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
-            <p>
-              <b>Erik</b> 
-            </p>
-          </div> <hr class="reparatlinjer"> 
-
-          <div class="Andreas"> 
-            <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
-            <p>
-              <b>Andreas</b>  
-            </p>
-          </div> <hr class="reparatlinjer"> 
-
-          <div class="Johan"> 
-            <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
-            <p>
-              <b>Johan</b>  
+              <b>Olle</b> und Ruben trafen sich in der Wasserübungshalle des Regiments, wo sie beide arbeiteten. Sie verstanden sich gut und trainierten weiterhin 
+              gemeinsam und ließen sich andere Dinge einfallen. Als Olle mit der Ausbildung zum Offizier begann, änderte sich regelmäßiges Training zu mindestens ein 
+              jährliches Treffen mit Olle in Karlskrona. Olle ist immer erreichbar und ein fantastisch guter Freund mit einem unglaublich warmen Herzen. 
+              Das und Olles gute Fähigkeit, die Stimmung zu heben, machen ihn zum Trauzeugen. 
             </p>
           </div> <hr class="reparatlinjer"> 
 
           <div class="Leo"> 
             <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
             <p>
-              <b>Leo</b>  
+              <b>Leo</b> kam zum Militär, als Ruben Ausbilder für die Wehrpflichtgruppe war. Obwohl sie sich in unterschiedlichen Zügen befanden, bewachten sie gemeinsam das Stockholmer Schloss.
+              Nach dem Militärdienst nahm Leo einen Job beim Militär an und zog mit Andreas in ein kleines Haus bei der Arbeit ein. Durch Wassersport und Kochabende unter der Leitung von Andreas 
+              entdeckten Ruben und Leo ihr gemeinsames Interesse am Leben im Freien und unternahmen gemeinsam ein Abenteuer am See Grövelsjön. Nach diesem Abenteuer blieben sie enge Freunde, 
+              die sich regelmäßig treffen und versuchen, das nächste Abenteuer zu finden.
+            </p>
+          </div> <hr class="reparatlinjer"> 
+
+          <div class="Erik"> 
+            <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
+            <p>
+              <b>Erik</b> und Ruben trafen sich zum ersten Mal beim morgendlichen Lineup am ersten Tag bei Grundausbildung im Militär. Sie wurden der gleichen Gruppe zugeteilt und verbrachten 
+              9 Monate fast rund um die Uhr miteinander und lösten gemeinsam viele schwierige Aufgaben. Das Training schweißte die Gruppe, zusammen und auch wenn sie nach der Grundausbildung 
+              getrennte Wege gingen, verbrachten sie viel Zeit in ihrer Freizeit. Erik, Andreas und Ruben sind auch einen Teil des Kungsleden gemeinsam gelaufen, 
+              wo sie nach 16 Stunden im Auto 100 km gewandert sind (über mehrere Tage), den größten Teil des Kebnekaise hinaufgestiegen sind und dann 16 Stunden wieder nach Hause gefahren sind. 
+              Erik ist ein guter Freund, mit dem man immer Spaß hat.
+            </p>
+          </div> <hr class="reparatlinjer"> 
+
+          <div class="Andreas"> 
+            <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
+            <p>
+              <b>Andreas</b> war der erste, der am Tag vor Beginn der Grundausbildung nach Berga kam, und Ruben der zweite. Sie wurden demselben Zug, aber nicht derselben Gruppe zugeteilt. 
+              Dennoch hatten sie während des Trainings immer noch guten Kontakt und knüpften engen Kontakt. Nach der Grundausbildung arbeiteten sie mehrere Jahre lang eng in derselben Kompanie 
+              (aber unterschiedliche Züge) zusammen und verbrachten viel Zeit in ihrer Freizeit. Andreas ist mittlerweile schon lange ein enger Freund, der in schwierigen Zeiten zuhört und hilft. 
+              Gemeinsam haben sie auch geplant, Vasaloppet und Nordenskiöld zu fahren. Allerdings ist Andreas noch nicht Vasaloppet gefahren und, Ruben nicht Nordenskiöld.
+ 
+            </p>
+          </div> <hr class="reparatlinjer"> 
+
+          <div class="Mattis"> 
+            <img src="imagesBrollopsfolje/klara&anna.jpg" class="Olle_anna" alt="Olle & Anna"/>
+            <p>
+              <b>Mattis</b> Mattis trat ins Leben, als Ruben 6 Jahre alt war. Nach etwas Streit und aufwuchs kommen sie heute gut miteinander klar. In seinem Berufsleben hat er die Welt des Kaffees erkundet, 
+              in einem Espressohaus gearbeitet und arbeitet nun bei Da Matteo in Göteborg, wo er nun sein Wissen vertiefen wird, indem er mit dem Rösten von Kaffee beginnt. Mattis möchte ein eigenes Café eröffnen, 
+              in dem er selbst Kaffee aus verschiedenen Teilen der Welt röstet und aufbrüht. Möchtetihr eine richtig gute Tasse Kaffee, fragt Mattis. 
             </p>
           </div> <hr class="reparatlinjer"> 
 
