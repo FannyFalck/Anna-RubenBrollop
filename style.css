@@ -199,7 +199,19 @@ hr {
   gap: 15px;
 }
 
+/* ********* ********** ******** Spex bild ************** **************/
+#spexbild {
+  display: flex;
+  justify-content: center; /* Centrerar innehållet i div */
+  align-items: center; /* Centrerar lodrätt om det behövs */
+}
 
+.spexbildClass {
+  max-width: 50%; /* Gör bilden hälften så bred som sin föräldra-div */
+  height: auto; /* Bevarar proportionerna */
+  display: block; /* Gör det enklare att hantera */
+  margin: 0 auto; /* Centrerar bilden */
+}
 
 /*  ********* ********** ******** Links in brödtext or klickbara  ********* ********** ******** */
 .OSAlinkValkomen a {
@@ -417,6 +429,20 @@ ul#mynav {
   }
   .flaggGER {
     right: 10px;
+  }
+  
+  /* ********* ********** ******** carousel ************** **************/
+  #spexbild {
+    display: flex;
+    justify-content: center; /* Centrerar innehållet i div */
+    align-items: center; /* Centrerar lodrätt om det behövs */
+  }
+  
+  .spexbildClass {
+    max-width: 70%; /* Gör bilden hälften så bred som sin föräldra-div */
+    height: auto; /* Bevarar proportionerna */
+    display: block; /* Gör det enklare att hantera */
+    margin: 0 auto; /* Centrerar bilden */
   }
   
 }
