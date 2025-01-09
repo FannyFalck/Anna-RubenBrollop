@@ -190,12 +190,13 @@ hr {
 }
 
 .carousel {
-  width: 200px;
+  width: 380px;
 }
 
 .style-cauresell-bilder {
   display: flex;
-  gap: 10px;
+  flex-flow: wrap;
+  gap: 15px;
 }
 
 
@@ -387,14 +388,20 @@ ul#mynav {
     margin: -5px 10px 0px -210px;
   }
 
-  /*  ************ **** Välkomstext   **** *********/
+/* ********* ********** ******** carousel ************** **************/
+  .carousel-item>img {
+    max-width: 100%;
+  }
+  .carousel {
+    width: 320px;
+  }
 
   .style-cauresell-bilder {
     display: flex;
+    justify-content: center;
     flex-flow: wrap;
-    gap: 10px;
+    gap: 15px;
   }
-
   /* ************  ******** ** Flagga  ****** ****** */
   .flaggSWE, .flaggGER {
     width: 50px;
@@ -420,9 +427,17 @@ ul#mynav {
 /* ******** ******** ******** ********   ******** ******** ******** ********   ******** ******** ******** ********    */
 @media (max-width: 375px) {
 
+  .carousel-item>img {
+    max-width: 100%;
+  }
+  .carousel {
+    width: 310px;
+  }
   .style-cauresell-bilder {
     flex-direction: column;
-    gap: 5px;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 10px;
   }
 
   #TimeCountDown div {
