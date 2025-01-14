@@ -268,6 +268,16 @@ ul#mynav {
   border: none;
 }
 
+.boendehelglinjer {
+  height: 2px;
+  background-color: gray;
+  width: 60%;
+  display: block; 
+  border: none;
+  margin: 20px auto; /* Centrerar och lägger till mellanrum ovanför och under */
+}
+
+
 /* ************  ********  Flagga  ****** ****** */
 .flaggSWE, .flaggGER {
   width: 90px;
