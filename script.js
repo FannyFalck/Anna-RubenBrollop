@@ -43,38 +43,50 @@ function scrollToTargetAdjusted(target){
 //***********************************************************************************************
 // ******* ******* Time Conter Down ******* *******
 function TimeCountDown() {
-  // Sätt datumet för nedräkningen
-  const targetDate = new Date("August 23, 2025 00:00:00").getTime();
+  // Sätt datumet för bröllopet
+  const weddingDate = new Date("August 23, 2025 00:00:00").getTime();
 
-  // Uppdatera nedräkningen varje sekund
-  const interval = setInterval(function () {
+  setInterval(function () {
     const now = new Date().getTime();
-    const distance = targetDate - now;
 
-    // Beräkna dagar, timmar, minuter och sekunder
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    if (now < weddingDate) {
+      // --- BRÖLLOPET HAR INTE SKETT ÄN (NEDRÄKNING) ---
+      const distance = weddingDate - now;
 
-    // Visa resultatet i respektive element
-    document.getElementById("days").innerHTML = `<span>${days}</span> `;
-    document.getElementById("hours").innerHTML = `<span>${hours}</span> `;
-    document.getElementById(
-      "minutes"
-    ).innerHTML = `<span>${minutes}</span> `;
-    document.getElementById(
-      "seconds"
-    ).innerHTML = `<span>${seconds}</span> `;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Om nedräkningen är klar, visa ett meddelande
-    if (distance < 0) {
-      clearInterval(interval);
-      document.getElementById("TimeCountDown").innerHTML = "Event has started!";
+      // sätt text med översättning via data-translate
+      document.getElementById("TimerCountText_id").setAttribute("data-translate", "Bröllopsdag om");
+
+      document.getElementById("days").innerHTML = `<span>${days}</span>`;
+      document.getElementById("hours").innerHTML = `<span>${hours}</span>`;
+      document.getElementById("minutes").innerHTML = `<span>${minutes}</span>`;
+      document.getElementById("seconds").innerHTML = `<span>${seconds}</span>`;
+    } else {
+      // --- EFTER BRÖLLOPET (UPPRÄKNING) ---
+      const distance = now - weddingDate;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // sätt text med översättning via data-translate
+      document.getElementById("TimerCountText_id").setAttribute("data-translate", "Gifta sedan");
+
+      document.getElementById("days").innerHTML = `<span>${days}</span>`;
+      document.getElementById("hours").innerHTML = `<span>${hours}</span>`;
+      document.getElementById("minutes").innerHTML = `<span>${minutes}</span>`;
+      document.getElementById("seconds").innerHTML = `<span>${seconds}</span>`;
     }
-  }, 1000); // Uppdatera varje sekund (1000 ms)
+  }, 1000);
 }
 
 TimeCountDown();
